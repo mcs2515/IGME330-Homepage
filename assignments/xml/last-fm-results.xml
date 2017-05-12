@@ -1,0 +1,2615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<events artist="Taylor Swift" festivalsonly="0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" page="1" perPage="50" totalPages="2" total="57">
+<event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424313</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8783483</id>
+    <name>American Airlines Arena</name>
+    <location>
+      <city>Miami</city>
+      <country>United States</country>
+      <street>601 Biscayne Blvd.</street>
+      <postalcode>33132</postalcode>
+      <geo:point>
+         <geo:lat>25.781121</geo:lat>
+         <geo:long>-80.189198</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8783483+American+Airlines+Arena</url>
+    <website>http://www.aaarena.com/</website>
+    <phonenumber>305-358-5885</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/151263.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/151263.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/151263.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/151263.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/151263/American+Airlines+Arena.jpg</image>
+  </venue>    <startDate>Wed, 10 Apr 2013 23:00:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>5</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424313</tag>    
+  <url>http://www.last.fm/event/3424313+Taylor+Swift+at+American+Airlines+Arena+on+10+April+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+</event>
+<event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3453114</id>
+  <title>Taylor Swift: The Red Tour</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>9126649</id>
+    <name>Amway Center</name>
+    <location>
+      <city>Orlando</city>
+      <country>United States</country>
+      <street>400 West Church Street</street>
+      <postalcode>32801</postalcode>
+      <geo:point>
+         <geo:lat>28.540163</geo:lat>
+         <geo:long>-81.384587</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/9126649+Amway+Center</url>
+    <website></website>
+    <phonenumber>4078492020</phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Thu, 11 Apr 2013 19:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Taylor Swift: The Red Tour<br />Taylor Swift, Ed Sheeran<br />Amway Center <br />400 W Church St., Orlando, FL 32801<br />Thu, Apr 11, 2013 07:00 PM</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>4</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3453114</tag>    
+  <url>http://www.last.fm/event/3453114+Taylor+Swift:+The+Red+Tour</url>
+  <website>http://www.ticketmaster.com/event/2200497CDCD87878?artistid=1094215&amp;majorcatid=10001&amp;minorcatid=2</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>country</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+</event>    
+<event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3453125</id>
+  <title>Taylor Swift: The Red Tour</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>9126649</id>
+    <name>Amway Center</name>
+    <location>
+      <city>Orlando</city>
+      <country>United States</country>
+      <street>400 West Church Street</street>
+      <postalcode>32801</postalcode>
+      <geo:point>
+         <geo:lat>28.540163</geo:lat>
+         <geo:long>-81.384587</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/9126649+Amway+Center</url>
+    <website></website>
+    <phonenumber>4078492020</phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Fri, 12 Apr 2013 19:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Taylor Swift: The Red Tour<br />Taylor Swift, Ed Sheeran<br />Amway Center <br />400 W Church St., Orlando, FL 32801<br />Fri, Apr 12, 2013 07:00 PM</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>3</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3453125</tag>    
+  <url>http://www.last.fm/event/3453125+Taylor+Swift:+The+Red+Tour</url>
+  <website>http://www.ticketmaster.com/event/2200497CDCE0787A?artistid=1094215&amp;majorcatid=10001&amp;minorcatid=2</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>country</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+</event>
+<event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424314</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8804206</id>
+    <name>Philips Arena</name>
+    <location>
+      <city>Atlanta</city>
+      <country>United States</country>
+      <street>1 Philips Dr</street>
+      <postalcode>30303</postalcode>
+      <geo:point>
+         <geo:lat>33.759205</geo:lat>
+         <geo:long>-84.399076</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8804206+Philips+Arena</url>
+    <website>http://www.philipsarena.com</website>
+    <phonenumber>404-878-3000</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/502252.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/502252.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/502252.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/502252.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/502252/Philips+Arena.jpg</image>
+  </venue>    <startDate>Thu, 18 Apr 2013 23:02:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>3</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424314</tag>    
+  <url>http://www.last.fm/event/3424314+Taylor+Swift+at+Philips+Arena+on+18+April+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+</event>
+<event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424315</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8804206</id>
+    <name>Philips Arena</name>
+    <location>
+      <city>Atlanta</city>
+      <country>United States</country>
+      <street>1 Philips Dr</street>
+      <postalcode>30303</postalcode>
+      <geo:point>
+         <geo:lat>33.759205</geo:lat>
+         <geo:long>-84.399076</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8804206+Philips+Arena</url>
+    <website>http://www.philipsarena.com</website>
+    <phonenumber>404-878-3000</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/502252.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/502252.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/502252.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/502252.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/502252/Philips+Arena.jpg</image>
+  </venue>    <startDate>Fri, 19 Apr 2013 23:03:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>4</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424315</tag>    
+  <url>http://www.last.fm/event/3424315+Taylor+Swift+at+Philips+Arena+on+19+April+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+</event>
+<event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424339</id>
+  <title>The Red Tour</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>10235845</id>
+    <name>Tampa Bay Times Forum</name>
+    <location>
+      <city>Tampa, FL</city>
+      <country>United States</country>
+      <street>401 Channelside Dr</street>
+      <postalcode>33602</postalcode>
+      <geo:point>
+         <geo:lat>27.942753</geo:lat>
+         <geo:long>-82.451977</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/10235845+Tampa+Bay+Times+Forum</url>
+    <website>http://www.tampabaytimesforum.com/</website>
+    <phonenumber></phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Sat, 20 Apr 2013 23:35:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>4</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424339</tag>    
+  <url>http://www.last.fm/event/3424339+The+Red+Tour</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>british</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459038</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8785346</id>
+    <name>Quicken Loans Arena</name>
+    <location>
+      <city>Cleveland</city>
+      <country>United States</country>
+      <street>1 Center Court</street>
+      <postalcode>44115</postalcode>
+      <geo:point>
+         <geo:lat>41.496942</geo:lat>
+         <geo:long>-81.689293</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8785346+Quicken+Loans+Arena</url>
+    <website>http://www.theqarena.com/</website>
+    <phonenumber></phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/33302447.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/33302447.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/33302447.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/33302447.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/33302447/Quicken+Loans+Arena+QuickenLoansArenaAwesomeview.jpg</image>
+  </venue>    <startDate>Thu, 25 Apr 2013 05:37:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>2</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459038</tag>    
+  <url>http://www.last.fm/event/3459038+Taylor+Swift+at+Quicken+Loans+Arena+on+25+April+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>british</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459039</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>10235840</id>
+    <name>Bankers Life Fieldhouse</name>
+    <location>
+      <city>Indianapolis, IN</city>
+      <country>United States</country>
+      <street>125 S. Pennsylvania Street</street>
+      <postalcode>46204</postalcode>
+      <geo:point>
+         <geo:lat>39.764678</geo:lat>
+         <geo:long>-86.156064</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/10235840+Bankers+Life+Fieldhouse</url>
+    <website>http://www.bankerslifefieldhouse.com/</website>
+    <phonenumber>(317) 917-2727</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/78732621.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/78732621.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/78732621.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/78732621.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/78732621/Bankers+Life+Fieldhouse+BankersLifeFieldhouse.jpg</image>
+  </venue>    <startDate>Fri, 26 Apr 2013 05:37:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>2</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459039</tag>    
+  <url>http://www.last.fm/event/3459039+Taylor+Swift+at+Bankers+Life+Fieldhouse+on+26+April+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459040</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8787992</id>
+    <name>Rupp Arena</name>
+    <location>
+      <city>Lexington</city>
+      <country>United States</country>
+      <street>430 West Vine Street</street>
+      <postalcode>40507</postalcode>
+      <geo:point>
+         <geo:lat>38.049229</geo:lat>
+         <geo:long>-84.501036</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8787992+Rupp+Arena</url>
+    <website>http://www.rupparena.com/</website>
+    <phonenumber>1-859-233-4567</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/469063.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/469063.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/469063.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/469063.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/469063/Rupp+Arena.jpg</image>
+  </venue>    <startDate>Sat, 27 Apr 2013 05:38:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459040</tag>    
+  <url>http://www.last.fm/event/3459040+Taylor+Swift+at+Rupp+Arena+on+27+April+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>british</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424341</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8802230</id>
+    <name>Ford Field</name>
+    <location>
+      <city>Detroit</city>
+      <country>United States</country>
+      <street>2000 Brush Street</street>
+      <postalcode>48226</postalcode>
+      <geo:point>
+         <geo:lat>42.339803</geo:lat>
+         <geo:long>-83.045524</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8802230+Ford+Field</url>
+    <website>http://www.detroitlions.com/ford-field/index.html</website>
+    <phonenumber>+1 313-262-2000</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/341761.png</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/341761.png</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/341761.png</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/341761.png</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/341761/Ford+Field.png</image>
+  </venue>    <startDate>Sat, 04 May 2013 23:36:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>9</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424341</tag>    
+  <url>http://www.last.fm/event/3424341+Taylor+Swift+at+Ford+Field+on+4+May+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>british</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459041</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>10227008</id>
+    <name>KFC Yum! Center</name>
+    <location>
+      <city>Louisville, KY</city>
+      <country>United States</country>
+      <street>1 Arena Plaza</street>
+      <postalcode>40202</postalcode>
+      <geo:point>
+         <geo:lat>38.256531</geo:lat>
+         <geo:long>-85.754148</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/10227008+KFC+Yum!+Center</url>
+    <website>http://www.kfcyumcenter.com/</website>
+    <phonenumber>(502) 690-9000</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/70502446.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/70502446.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/70502446.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/70502446.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/70502446/KFC+Yum+Center+kfcyum.jpg</image>
+  </venue>    <startDate>Tue, 07 May 2013 05:39:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459041</tag>    
+  <url>http://www.last.fm/event/3459041+Taylor+Swift+at+KFC+Yum!+Center+on+7+May+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424404</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8784707</id>
+    <name>Nationwide Arena</name>
+    <location>
+      <city>Columbus</city>
+      <country>United States</country>
+      <street>200 West Nationwide Blvd.</street>
+      <postalcode>43215</postalcode>
+      <geo:point>
+         <geo:lat>39.969406</geo:lat>
+         <geo:long>-83.006206</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8784707+Nationwide+Arena</url>
+    <website>http://www.nationwidearena.com/</website>
+    <phonenumber>614-246-2000</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/572308.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/572308.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/572308.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/572308.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/572308/Nationwide+Arena.jpg</image>
+  </venue>    <startDate>Wed, 08 May 2013 00:49:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>3</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424404</tag>    
+  <url>http://www.last.fm/event/3424404+Taylor+Swift+at+Nationwide+Arena+on+8+May+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>british</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424407</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8785557</id>
+    <name>Verizon Center</name>
+    <location>
+      <city>Washington DC</city>
+      <country>United States</country>
+      <street>601 F Street, NW</street>
+      <postalcode>20004</postalcode>
+      <geo:point>
+         <geo:lat>38.898047</geo:lat>
+         <geo:long>-77.020922</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8785557+Verizon+Center</url>
+    <website>http://www.verizoncenter.com/</website>
+    <phonenumber>(202) 628-3200</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/42338.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/42338.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/42338.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/42338.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/42338/Verizon+Center.jpg</image>
+  </venue>    <startDate>Sat, 11 May 2013 00:50:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>3</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424407</tag>    
+  <url>http://www.last.fm/event/3424407+Taylor+Swift+at+Verizon+Center+on+11+May+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424409</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8785557</id>
+    <name>Verizon Center</name>
+    <location>
+      <city>Washington DC</city>
+      <country>United States</country>
+      <street>601 F Street, NW</street>
+      <postalcode>20004</postalcode>
+      <geo:point>
+         <geo:lat>38.898047</geo:lat>
+         <geo:long>-77.020922</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8785557+Verizon+Center</url>
+    <website>http://www.verizoncenter.com/</website>
+    <phonenumber>(202) 628-3200</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/42338.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/42338.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/42338.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/42338.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/42338/Verizon+Center.jpg</image>
+  </venue>    <startDate>Sun, 12 May 2013 00:51:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>3</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424409</tag>    
+  <url>http://www.last.fm/event/3424409+Taylor+Swift+at+Verizon+Center+on+12+May+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459046</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8782020</id>
+    <name>Toyota Center</name>
+    <location>
+      <city>Houston</city>
+      <country>United States</country>
+      <street>1510 Polk Street</street>
+      <postalcode>77002</postalcode>
+      <geo:point>
+         <geo:lat>29.750958</geo:lat>
+         <geo:long>-95.362017</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8782020+Toyota+Center</url>
+    <website>http://www.toyotacentertix.com</website>
+    <phonenumber>1-866-446-8849</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/45305243.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/45305243.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/45305243.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/45305243.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/45305243/Toyota+Center+Houston_Toyota_Center_.jpg</image>
+  </venue>    <startDate>Thu, 16 May 2013 05:41:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>3</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459046</tag>    
+  <url>http://www.last.fm/event/3459046+Taylor+Swift+at+Toyota+Center+on+16+May+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>british</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424202</id>
+  <title>The RED Tour</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8811856</id>
+    <name>AT&amp;T Center</name>
+    <location>
+      <city>San Antonio</city>
+      <country>United States</country>
+      <street>1 AT&amp;T Center Pkwy</street>
+      <postalcode>78219</postalcode>
+      <geo:point>
+         <geo:lat>29.42703</geo:lat>
+         <geo:long>-98.43672</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8811856+AT%2526T+Center</url>
+    <website>http://www.attcenter.com</website>
+    <phonenumber>210-444-5000</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/10608523.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/10608523.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/10608523.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/10608523.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/10608523/ATT+Center+800pxAttcenter.jpg</image>
+  </venue>    <startDate>Wed, 22 May 2013 19:00:00</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>4</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424202</tag>    
+  <url>http://www.last.fm/event/3424202+The+RED+Tour</url>
+  <website>http://www.attcenter.com</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>country</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424412</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>10282454</id>
+    <name>Dallas Cowboys Stadium</name>
+    <location>
+      <city>Arlington, TX</city>
+      <country>United States</country>
+      <street>1 Legends Way</street>
+      <postalcode>76011</postalcode>
+      <geo:point>
+         <geo:lat>32.749258</geo:lat>
+         <geo:long>-97.096739</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/10282454+Dallas+Cowboys+Stadium</url>
+    <website>http://stadium.dallascowboys.com/</website>
+    <phonenumber>817-892-5000</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/83913089.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/83913089.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/83913089.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/83913089.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/83913089/Dallas+Cowboys+Stadium+dallas.jpg</image>
+  </venue>    <startDate>Sat, 25 May 2013 00:52:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>6</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424412</tag>    
+  <url>http://www.last.fm/event/3424412+Taylor+Swift+at+Dallas+Cowboys+Stadium+on+25+May+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3460184</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8896710</id>
+    <name>Jobing.com Arena</name>
+    <location>
+      <city>Glendale, AZ</city>
+      <country>United States</country>
+      <street>9400 W. Maryland Ave.</street>
+      <postalcode>85305</postalcode>
+      <geo:point>
+         <geo:lat>33.53158</geo:lat>
+         <geo:long>-112.261832</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8896710+Jobing.com+Arena</url>
+    <website>http://www.jobingarena.com/</website>
+    <phonenumber>623.772.3200</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/17540547.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/17540547.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/17540547.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/17540547.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/17540547/Jobingcom+Arena+jobing.jpg</image>
+  </venue>    <startDate>Tue, 28 May 2013 19:00:00</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>2</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3460184</tag>    
+  <url>http://www.last.fm/event/3460184+Taylor+Swift+at+Jobing.com+Arena+on+28+May+2013</url>
+  <website>http://www.goodseattickets.com/Ed-Sheeran</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3460185</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8896710</id>
+    <name>Jobing.com Arena</name>
+    <location>
+      <city>Glendale, AZ</city>
+      <country>United States</country>
+      <street>9400 W. Maryland Ave.</street>
+      <postalcode>85305</postalcode>
+      <geo:point>
+         <geo:lat>33.53158</geo:lat>
+         <geo:long>-112.261832</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8896710+Jobing.com+Arena</url>
+    <website>http://www.jobingarena.com/</website>
+    <phonenumber>623.772.3200</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/17540547.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/17540547.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/17540547.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/17540547.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/17540547/Jobingcom+Arena+jobing.jpg</image>
+  </venue>    <startDate>Wed, 29 May 2013 19:00:00</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>3</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3460185</tag>    
+  <url>http://www.last.fm/event/3460185+Taylor+Swift+at+Jobing.com+Arena+on+29+May+2013</url>
+  <website>http://www.goodseattickets.com/Ed-Sheeran</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>country</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459047</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8803893</id>
+    <name>EnergySolutions Arena</name>
+    <location>
+      <city>Salt Lake City</city>
+      <country>United States</country>
+      <street>301 West South Temple</street>
+      <postalcode>84101</postalcode>
+      <geo:point>
+         <geo:lat>40.767798</geo:lat>
+         <geo:long>-111.901096</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8803893+EnergySolutions+Arena</url>
+    <website>http://www.energysolutionsarena.com/</website>
+    <phonenumber>801-325-2000</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/605474.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/605474.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/605474.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/605474.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/605474/EnergySolutions+Arena.jpg</image>
+  </venue>    <startDate>Sat, 01 Jun 2013 19:00:00</startDate>
+  <description><![CDATA[<div class="bbcode">Sold Out</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459047</tag>    
+  <url>http://www.last.fm/event/3459047+Taylor+Swift+at+EnergySolutions+Arena+on+1+June+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>british</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459048</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8782017</id>
+    <name>Pepsi Center</name>
+    <location>
+      <city>Denver</city>
+      <country>United States</country>
+      <street>1000 Chopper Circle</street>
+      <postalcode>80204</postalcode>
+      <geo:point>
+         <geo:lat>39.74799</geo:lat>
+         <geo:long>-105.007367</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8782017+Pepsi+Center</url>
+    <website>http://www.pepsicenter.com/</website>
+    <phonenumber>(303) 405-1111</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/2727304.gif</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/2727304.gif</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/2727304.gif</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/2727304.gif</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/2727304/Pepsi+Center+The.gif</image>
+  </venue>    <startDate>Sun, 02 Jun 2013 05:43:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459048</tag>    
+  <url>http://www.last.fm/event/3459048+Taylor+Swift+at+Pepsi+Center+on+2+June+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3549492</id>
+  <title>CMA Music Festival</title>
+  <artists>
+    <artist>Gary Allan</artist>
+    <artist>Kelly Clarkson</artist>
+    <artist>Taylor Swift</artist>
+    <artist>Carrie Underwood</artist>
+    <artist>Lady Antebellum</artist>
+    <artist>Brad Paisley</artist>
+    <artist>Keith Urban</artist>
+    <artist>Blake Shelton</artist>
+    <artist>Dierks Bentley</artist>
+    <artist>Miranda Lambert</artist>
+    <artist>Luke Bryan</artist>
+    <artist>Eric Church</artist>
+    <artist>Zac Brown Band</artist>
+    <artist>Jake Owen</artist>
+    <artist>The Band Perry</artist>
+    <artist>Little Big Town</artist>
+    <artist>Hunter Hayes</artist>
+    <artist>Florida Georgia Line</artist>
+    <headliner>Gary Allan</headliner>
+  </artists>
+    <venue>
+    <id>8909548</id>
+    <name>LP Field</name>
+    <location>
+      <city>Nashville , Tennessee</city>
+      <country>United States</country>
+      <street></street>
+      <postalcode></postalcode>
+      <geo:point>
+         <geo:lat>36.166208</geo:lat>
+         <geo:long>-86.771413</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8909548+LP+Field</url>
+    <website></website>
+    <phonenumber></phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Thu, 06 Jun 2013 12:35:01</startDate>
+  <endDate>Sun, 09 Jun 2013 12:35:01</endDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/88033965.jpg</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/88033965.jpg</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/88033965.jpg</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>3</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3549492</tag>    
+  <url>http://www.last.fm/festival/3549492+CMA+Music+Festival</url>
+  <website>http://www.cmaworld.com/cma-music-festival/2013/home</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>country</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3440417</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <artist>Austin Mahone</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8795528</id>
+    <name>Rogers Centre</name>
+    <location>
+      <city>Toronto</city>
+      <country>Canada</country>
+      <street>1 Blue Jays Way</street>
+      <postalcode>M5V 1J3</postalcode>
+      <geo:point>
+         <geo:lat>43.640542</geo:lat>
+         <geo:long>-79.388911</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8795528+Rogers+Centre</url>
+    <website>http://www.rogerscentre.com</website>
+    <phonenumber></phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/11951519.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/11951519.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/11951519.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/11951519.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/11951519/Rogers+Centre+ev_filmshoots_view2.jpg</image>
+  </venue>    <startDate>Fri, 14 Jun 2013 18:30:00</startDate>
+  <description><![CDATA[<div class="bbcode">6-Time Grammy Winner, Taylor Swift, is returning to Toronto, this time taking Rogers Centre with her North American RED TOUR on Friday, June 14 and Saturday, June 15, 2013. The RED TOUR, featuring special guest, Ed Sheeran, will highlight songs from Swift's brand new album, RED, including the hit song &quot;We Are Never Ever Getting Back Together.&quot;<br /><br />Onsale to General Public<br /><br />Start: Fri, 11/23/12 10:00 AM EST<br />Front Of The Line by American Express<br />For Front Of The Line Tickets, purchase must be charged in full to an American Express Card. Subject to availability and to event and ticketing agent terms, conditions and fees.<br /><br />Start: Tue, 11/20/12 10:00 AM EST<br />End: Thu, 11/22/12 10:00 PM EST<br />TaylorSwift.com &amp; RED Presales<br /><br />Start: Tue, 11/20/12 10:00 AM EST<br />End: Thu, 11/22/12 10:00 PM EST<br />VIP Package Presale<br /><br />Start: Tue, 11/20/12 10:00 AM EST<br />End: Thu, 11/22/12 10:00 PM EST<br />VIP Package<br /><br />Start: Fri, 11/23/12 10:00 AM EST<br />End: Fri, 05/24/13 05:00 PM EDT</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>16</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3440417</tag>    
+  <url>http://www.last.fm/event/3440417+Taylor+Swift+at+Rogers+Centre+on+14+June+2013</url>
+  <website>http://www.rogerscentre.com/events/article.jsp?content=20121026_113904_2028</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>pop</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424066</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <artist>Austin Mahone</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8795528</id>
+    <name>Rogers Centre</name>
+    <location>
+      <city>Toronto</city>
+      <country>Canada</country>
+      <street>1 Blue Jays Way</street>
+      <postalcode>M5V 1J3</postalcode>
+      <geo:point>
+         <geo:lat>43.640542</geo:lat>
+         <geo:long>-79.388911</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8795528+Rogers+Centre</url>
+    <website>http://www.rogerscentre.com</website>
+    <phonenumber></phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/11951519.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/11951519.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/11951519.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/11951519.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/11951519/Rogers+Centre+ev_filmshoots_view2.jpg</image>
+  </venue>    <startDate>Sat, 15 Jun 2013 18:30:00</startDate>
+  <description><![CDATA[<div class="bbcode"><a href="http://www.ticketmaster.ca/event/10004961DBAACD8C" rel="nofollow">http://www.ticketmaster.ca/event/10004961DBAACD8C</a><br /><br />CA $41.95 (CA $29.50 Ticket + CA $12.45 Fees)<br />CA $124.75 (CA $109.50 Ticket + CA $15.25 Fees)<br /><br />Onsale to General Public<br />Start: Fri, 11/16/12 10:00 AM EST<br /><br />American Express<br />Start: Tue, 11/13/12 10:00 AM EST<br />End: Thu, 11/15/12 10:00 PM EST<br /><br />TaylorSwift.com &amp; RED Presales<br />Start: Tue, 11/13/12 10:00 AM EST<br />End: Thu, 11/15/12 10:00 PM EST<br /><br />VIP Package Presale<br />Start: Tue, 11/13/12 10:00 AM EST<br />End: Thu, 11/15/12 10:00 PM EST<br /><br />VIP Package<br />Start: Fri, 11/16/12 10:00 AM EST<br />End: Mon, 05/27/13 05:00 PM EDT</div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>27</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424066</tag>    
+  <url>http://www.last.fm/event/3424066+Taylor+Swift+at+Rogers+Centre+on+15+June+2013</url>
+  <website>http://www.rogerscentre.com/events/article.jsp?content=20121026_113904_2028</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>pop</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3423842</id>
+  <title>RED Tour 2013</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <artist>Austin Mahone</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>10282458</id>
+    <name>Investors Group Field</name>
+    <location>
+      <city>Winnipeg</city>
+      <country>Canada</country>
+      <street>University of Manitoba</street>
+      <postalcode>R3T 1Z2</postalcode>
+      <geo:point>
+         <geo:lat>49.805339</geo:lat>
+         <geo:long>-97.140615</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/10282458+Investors+Group+Field</url>
+    <website>http://www.investorsgroupfield.ca/</website>
+    <phonenumber>(204) 480-1048</phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Sat, 22 Jun 2013 18:30:00</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>9</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3423842</tag>    
+  <url>http://www.last.fm/event/3423842+RED+Tour+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>pop</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3516251</id>
+  <title>The RED Tour</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8781553</id>
+    <name>Rexall Place</name>
+    <location>
+      <city>Edmonton</city>
+      <country>Canada</country>
+      <street>7424 118 Avenue Nw</street>
+      <postalcode>T5B 4M9</postalcode>
+      <geo:point>
+         <geo:lat>53.570466</geo:lat>
+         <geo:long>-113.455444</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8781553+Rexall+Place</url>
+    <website>http://www.rexall-place.com/</website>
+    <phonenumber>(780) 471-7210</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/28314971.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/28314971.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/28314971.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/28314971.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/28314971/Rexall+Place+IMG_3308.jpg</image>
+  </venue>    <startDate>Tue, 25 Jun 2013 17:32:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>3</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3516251</tag>    
+  <url>http://www.last.fm/event/3516251+The+RED+Tour</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>country</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3516252</id>
+  <title>The RED Tour</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8781553</id>
+    <name>Rexall Place</name>
+    <location>
+      <city>Edmonton</city>
+      <country>Canada</country>
+      <street>7424 118 Avenue Nw</street>
+      <postalcode>T5B 4M9</postalcode>
+      <geo:point>
+         <geo:lat>53.570466</geo:lat>
+         <geo:long>-113.455444</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8781553+Rexall+Place</url>
+    <website>http://www.rexall-place.com/</website>
+    <phonenumber>(780) 471-7210</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/28314971.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/28314971.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/28314971.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/28314971.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/28314971/Rexall+Place+IMG_3308.jpg</image>
+  </venue>    <startDate>Wed, 26 Jun 2013 17:33:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3516252</tag>    
+  <url>http://www.last.fm/event/3516252+The+RED+Tour</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3426006</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8779485</id>
+    <name>BC Place</name>
+    <location>
+      <city>Vancouver</city>
+      <country>Canada</country>
+      <street>777 Pacific Boulevard Vancouver, BC V6B 4Y8</street>
+      <postalcode></postalcode>
+      <geo:point>
+         <geo:lat>49.26815</geo:lat>
+         <geo:long>-123.102585</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8779485+BC+Place</url>
+    <website>http://www.bcplacestadium.com/</website>
+    <phonenumber>(604) 661-7373</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/37933837.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/37933837.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/37933837.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/37933837.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/37933837/BC+Place++2.jpg</image>
+  </venue>    <startDate>Sat, 29 Jun 2013 00:28:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>18</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3426006</tag>    
+  <url>http://www.last.fm/event/3426006+Taylor+Swift+at+BC+Place+on+29+June+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>country</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424415</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8929256</id>
+    <name>Heinz Field</name>
+    <location>
+      <city>Pittsburgh</city>
+      <country>United States</country>
+      <street>100 Art Rooney Ave</street>
+      <postalcode>15212</postalcode>
+      <geo:point>
+         <geo:lat>40.446683</geo:lat>
+         <geo:long>-80.015673</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8929256+Heinz+Field</url>
+    <website>http://www.steelers.com/heinzfield/</website>
+    <phonenumber>(412) 323-1200</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/33548069.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/33548069.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/33548069.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/33548069.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/33548069/Heinz+Field+wiki.jpg</image>
+  </venue>    <startDate>Sat, 06 Jul 2013 00:54:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>4</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424415</tag>    
+  <url>http://www.last.fm/event/3424415+Taylor+Swift+at+Heinz+Field+on+6+July+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>british</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3495734</id>
+  <title>Red Tour</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>10252981</id>
+    <name>MetLife Stadium</name>
+    <location>
+      <city>East Rutherford, NJ</city>
+      <country>United States</country>
+      <street>1 MetLife Stadium Dr</street>
+      <postalcode>07073</postalcode>
+      <geo:point>
+         <geo:lat>40.814209</geo:lat>
+         <geo:long>-74.07369</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/10252981+MetLife+Stadium</url>
+    <website>http://www.metlifestadium.com/</website>
+    <phonenumber>(201) 559-1515</phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Sat, 13 Jul 2013 23:38:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>6</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3495734</tag>    
+  <url>http://www.last.fm/event/3495734+Red+Tour</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3455571</id>
+  <title>The Red Tour</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <artist>Austin Mahone</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8804172</id>
+    <name>Lincoln Financial Field</name>
+    <location>
+      <city>Philadelphia</city>
+      <country>United States</country>
+      <street>1020 Pattison Ave.</street>
+      <postalcode>19148</postalcode>
+      <geo:point>
+         <geo:lat>39.900518</geo:lat>
+         <geo:long>-75.167255</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8804172+Lincoln+Financial+Field</url>
+    <website></website>
+    <phonenumber></phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Fri, 19 Jul 2013 18:30:00</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>7</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3455571</tag>    
+  <url>http://www.last.fm/event/3455571+The+Red+Tour</url>
+  <website>http://www.ticketmaster.com/event/02004975A23D431A?artistid=1094215&amp;majorcatid=10001&amp;minorcatid=2</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>pop</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3455567</id>
+  <title>The Red Tour</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8804172</id>
+    <name>Lincoln Financial Field</name>
+    <location>
+      <city>Philadelphia</city>
+      <country>United States</country>
+      <street>1020 Pattison Ave.</street>
+      <postalcode>19148</postalcode>
+      <geo:point>
+         <geo:lat>39.900518</geo:lat>
+         <geo:long>-75.167255</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8804172+Lincoln+Financial+Field</url>
+    <website></website>
+    <phonenumber></phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Sat, 20 Jul 2013 18:30:00</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>6</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3455567</tag>    
+  <url>http://www.last.fm/event/3455567+The+Red+Tour</url>
+  <website>http://www.lincolnfinancialfield.com</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3437995</id>
+  <title>The Red Tour</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <artist>Austin Mahone</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8950387</id>
+    <name>Gillette Stadium</name>
+    <location>
+      <city>Foxborough</city>
+      <country>United States</country>
+      <street>1 Patriot Place</street>
+      <postalcode>02035</postalcode>
+      <geo:point>
+         <geo:lat>42.09085</geo:lat>
+         <geo:long>-71.264319</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8950387+Gillette+Stadium</url>
+    <website>http://www.gillettestadium.com</website>
+    <phonenumber></phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/39808157.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/39808157.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/39808157.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/39808157.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/39808157/Gillette+Stadium+Gillette_Dec_08.jpg</image>
+  </venue>    <startDate>Fri, 26 Jul 2013 18:30:00</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>2</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3437995</tag>    
+  <url>http://www.last.fm/event/3437995+The+Red+Tour</url>
+  <website>http://www.livenation.com/events/183551/jul-26-2013/taylor-swift-the-red-tour?ui=event-row</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>pop</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424416</id>
+  <title>The Red Tour</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <artist>Austin Mahone</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8950387</id>
+    <name>Gillette Stadium</name>
+    <location>
+      <city>Foxborough</city>
+      <country>United States</country>
+      <street>1 Patriot Place</street>
+      <postalcode>02035</postalcode>
+      <geo:point>
+         <geo:lat>42.09085</geo:lat>
+         <geo:long>-71.264319</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8950387+Gillette+Stadium</url>
+    <website>http://www.gillettestadium.com</website>
+    <phonenumber></phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/39808157.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/39808157.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/39808157.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/39808157.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/39808157/Gillette+Stadium+Gillette_Dec_08.jpg</image>
+  </venue>    <startDate>Sat, 27 Jul 2013 18:30:00</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>11</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424416</tag>    
+  <url>http://www.last.fm/event/3424416+The+Red+Tour</url>
+  <website>http://www.livenation.com/events/182699/jul-27-2013/taylor-swift-the-red-tour?ui=event-row</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>pop</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459049</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8792422</id>
+    <name>Wells Fargo Arena</name>
+    <location>
+      <city>Des Moines</city>
+      <country>United States</country>
+      <street>730 3rd Street</street>
+      <postalcode>50309</postalcode>
+      <geo:point>
+         <geo:lat>41.592634</geo:lat>
+         <geo:long>-93.620982</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8792422+Wells+Fargo+Arena</url>
+    <website>http://www.iowaeventscenter.com/arena_info_wells_fargo.aspx</website>
+    <phonenumber></phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/37566715.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/37566715.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/37566715.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/37566715.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/37566715/Wells+Fargo+Arena.jpg</image>
+  </venue>    <startDate>Thu, 01 Aug 2013 05:46:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459049</tag>    
+  <url>http://www.last.fm/event/3459049+Taylor+Swift+at+Wells+Fargo+Arena+on+1+August+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424296</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8858654</id>
+    <name>Sprint Center</name>
+    <location>
+      <city>Kansas City MO</city>
+      <country>United States</country>
+      <street>1407 Grand Boulevard</street>
+      <postalcode>64106</postalcode>
+      <geo:point>
+         <geo:lat>39.097154</geo:lat>
+         <geo:long>-94.581009</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8858654+Sprint+Center</url>
+    <website>http://sprintcenter.com</website>
+    <phonenumber>816.949.7050</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/3542169.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/3542169.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/3542169.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/3542169.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/3542169/Sprint+Center.jpg</image>
+  </venue>    <startDate>Fri, 02 Aug 2013 22:39:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>5</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424296</tag>    
+  <url>http://www.last.fm/event/3424296+Taylor+Swift+at+Sprint+Center+on+2+August+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>british</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424300</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8858654</id>
+    <name>Sprint Center</name>
+    <location>
+      <city>Kansas City MO</city>
+      <country>United States</country>
+      <street>1407 Grand Boulevard</street>
+      <postalcode>64106</postalcode>
+      <geo:point>
+         <geo:lat>39.097154</geo:lat>
+         <geo:long>-94.581009</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8858654+Sprint+Center</url>
+    <website>http://sprintcenter.com</website>
+    <phonenumber>816.949.7050</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/3542169.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/3542169.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/3542169.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/3542169.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/3542169/Sprint+Center.jpg</image>
+  </venue>    <startDate>Sat, 03 Aug 2013 22:40:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424300</tag>    
+  <url>http://www.last.fm/event/3424300+Taylor+Swift+at+Sprint+Center+on+3+August+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>country</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459050</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>9080902</id>
+    <name>INTRUST Bank Arena</name>
+    <location>
+      <city>Wichita</city>
+      <country>United States</country>
+      <street>500 East Waterman</street>
+      <postalcode>67202</postalcode>
+      <geo:point>
+         <geo:lat>37.682432</geo:lat>
+         <geo:long>-97.332916</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/9080902+INTRUST+Bank+Arena</url>
+    <website>http://www.intrustbankarena.com/</website>
+    <phonenumber>(316)660-1013</phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Tue, 06 Aug 2013 05:47:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>2</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459050</tag>    
+  <url>http://www.last.fm/event/3459050+Taylor+Swift+at+INTRUST+Bank+Arena+on+6+August+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>country</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459051</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8956282</id>
+    <name>BOK Center</name>
+    <location>
+      <city>Tulsa OK</city>
+      <country>United States</country>
+      <street>200 S Denver Ave</street>
+      <postalcode>74103</postalcode>
+      <geo:point>
+         <geo:lat>36.153145</geo:lat>
+         <geo:long>-95.995134</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8956282+BOK+Center</url>
+    <website>http://www.bokcenter.com/</website>
+    <phonenumber>918.596.7177</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/9602209.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/9602209.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/9602209.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/9602209.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/9602209/BOK+Center+800pxBokcenter20080810.jpg</image>
+  </venue>    <startDate>Wed, 07 Aug 2013 05:48:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459051</tag>    
+  <url>http://www.last.fm/event/3459051+Taylor+Swift+at+BOK+Center+on+7+August+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>country</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3437526</id>
+  <title>Taylor Swift - The Red Tour</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <artist>Austin Mahone</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8787296</id>
+    <name>Soldier Field</name>
+    <location>
+      <city>Chicago</city>
+      <country>United States</country>
+      <street>1410 S. Museum Campus Dr</street>
+      <postalcode>60605</postalcode>
+      <geo:point>
+         <geo:lat>41.861914</geo:lat>
+         <geo:long>-87.614821</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8787296+Soldier+Field</url>
+    <website>http://www.soldierfield.net/</website>
+    <phonenumber>(312) 235-7000</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/6020667.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/6020667.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/6020667.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/6020667.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/6020667/Soldier+Field+5103127.jpg</image>
+  </venue>    <startDate>Sat, 10 Aug 2013 18:30:00</startDate>
+  <description><![CDATA[<div class="bbcode">Soldier Field <br />1410 S. Museum Campus Drive, Chicago, IL 60605<br />Sat, Aug 10, 2013 06:30 PM<br /><br /><a href="http://www.last.fm/music/Taylor+Swift" class="bbcode_artist">Taylor Swift</a> &amp; <a href="http://www.last.fm/music/Ed+Sheeran" class="bbcode_artist">Ed Sheeran</a></div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>13</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3437526</tag>    
+  <url>http://www.last.fm/event/3437526+Taylor+Swift+-+The+Red+Tour</url>
+  <website>http://www.ticketmaster.com/event/04004957FA595D72?artistid=1094215&amp;majorcatid=10001&amp;minorcatid=2</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>pop</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424418</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>10244361</id>
+    <name>Valley View Casino Center</name>
+    <location>
+      <city>San Diego</city>
+      <country>United States</country>
+      <street>3500 Sports Arena Boulevard</street>
+      <postalcode>92110</postalcode>
+      <geo:point>
+         <geo:lat>32.755077</geo:lat>
+         <geo:long>-117.211794</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/10244361+Valley+View+Casino+Center</url>
+    <website>http://www.valleyviewcasinocenter.com/</website>
+    <phonenumber>(619) 224-4171</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/75020456.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/75020456.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/75020456.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/75020456.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/75020456/Valley+View+Casino+Center+valleyviewcasinocenter_0.jpg</image>
+  </venue>    <startDate>Thu, 15 Aug 2013 00:57:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>4</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424418</tag>    
+  <url>http://www.last.fm/event/3424418+Taylor+Swift+at+Valley+View+Casino+Center+on+15+August+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424419</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8780552</id>
+    <name>Staples Center</name>
+    <location>
+      <city>Los Angeles</city>
+      <country>United States</country>
+      <street>1111 S. Figueroa St</street>
+      <postalcode>90015</postalcode>
+      <geo:point>
+         <geo:lat>34.043634</geo:lat>
+         <geo:long>-118.267385</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8780552+Staples+Center</url>
+    <website>http://www.staplescenter.com/</website>
+    <phonenumber>(213) 742-7340</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/80632051.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/80632051.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/80632051.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/80632051.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/80632051/Staples+Center++Exterior.jpg</image>
+  </venue>    <startDate>Mon, 19 Aug 2013 00:58:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>5</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424419</tag>    
+  <url>http://www.last.fm/event/3424419+Taylor+Swift+at+Staples+Center+on+19+August+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>country</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424420</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8780552</id>
+    <name>Staples Center</name>
+    <location>
+      <city>Los Angeles</city>
+      <country>United States</country>
+      <street>1111 S. Figueroa St</street>
+      <postalcode>90015</postalcode>
+      <geo:point>
+         <geo:lat>34.043634</geo:lat>
+         <geo:long>-118.267385</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8780552+Staples+Center</url>
+    <website>http://www.staplescenter.com/</website>
+    <phonenumber>(213) 742-7340</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/80632051.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/80632051.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/80632051.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/80632051.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/80632051/Staples+Center++Exterior.jpg</image>
+  </venue>    <startDate>Tue, 20 Aug 2013 00:58:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424420</tag>    
+  <url>http://www.last.fm/event/3424420+Taylor+Swift+at+Staples+Center+on+20+August+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459052</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <artist>Austin Mahone</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8780552</id>
+    <name>Staples Center</name>
+    <location>
+      <city>Los Angeles</city>
+      <country>United States</country>
+      <street>1111 S. Figueroa St</street>
+      <postalcode>90015</postalcode>
+      <geo:point>
+         <geo:lat>34.043634</geo:lat>
+         <geo:long>-118.267385</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8780552+Staples+Center</url>
+    <website>http://www.staplescenter.com/</website>
+    <phonenumber>(213) 742-7340</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/80632051.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/80632051.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/80632051.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/80632051.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/80632051/Staples+Center++Exterior.jpg</image>
+  </venue>    <startDate>Fri, 23 Aug 2013 05:49:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459052</tag>    
+  <url>http://www.last.fm/event/3459052+Taylor+Swift+at+Staples+Center+on+23+August+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>pop</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459053</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <artist>Austin Mahone</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8780552</id>
+    <name>Staples Center</name>
+    <location>
+      <city>Los Angeles</city>
+      <country>United States</country>
+      <street>1111 S. Figueroa St</street>
+      <postalcode>90015</postalcode>
+      <geo:point>
+         <geo:lat>34.043634</geo:lat>
+         <geo:long>-118.267385</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8780552+Staples+Center</url>
+    <website>http://www.staplescenter.com/</website>
+    <phonenumber>(213) 742-7340</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/80632051.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/80632051.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/80632051.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/80632051.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/80632051/Staples+Center++Exterior.jpg</image>
+  </venue>    <startDate>Sat, 24 Aug 2013 05:49:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>2</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459053</tag>    
+  <url>http://www.last.fm/event/3459053+Taylor+Swift+at+Staples+Center+on+24+August+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>pop</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3424421</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>10282460</id>
+    <name>Sleep Train Arena</name>
+    <location>
+      <city>Sacramento</city>
+      <country>United States</country>
+      <street>1 Sports Pkwy</street>
+      <postalcode>95834</postalcode>
+      <geo:point>
+         <geo:lat>38.648005</geo:lat>
+         <geo:long>-121.517077</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/10282460+Sleep+Train+Arena</url>
+    <website>http://www.sleeptrainarena.com/</website>
+    <phonenumber></phonenumber>
+    <image size="small"></image>
+	<image size="medium"></image>
+	<image size="large"></image>
+	<image size="extralarge"></image>
+	<image size="mega"></image>
+  </venue>    <startDate>Tue, 27 Aug 2013 01:00:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3424421</tag>    
+  <url>http://www.last.fm/event/3424421+Taylor+Swift+at+Sleep+Train+Arena+on+27+August+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>pop</tag>
+      <tag>acoustic</tag>
+      <tag>british</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3426004</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8790718</id>
+    <name>The Rose Garden Arena</name>
+    <location>
+      <city>Portland</city>
+      <country>United States</country>
+      <street>1 Center Court</street>
+      <postalcode>97227</postalcode>
+      <geo:point>
+         <geo:lat>45.531847</geo:lat>
+         <geo:long>-122.666779</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8790718+The+Rose+Garden+Arena</url>
+    <website>http://www.rosequarter.com/</website>
+    <phonenumber></phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/2986270.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/2986270.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/2986270.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/2986270.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/_/2986270/The+Rose+Garden+Arena+RoseGardenArena.jpg</image>
+  </venue>    <startDate>Fri, 30 Aug 2013 00:25:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>10</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3426004</tag>    
+  <url>http://www.last.fm/event/3426004+Taylor+Swift+at+The+Rose+Garden+Arena+on+30+August+2013</url>
+  <website>http://taylorswift.com/news/106431</website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>british</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3454845</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8783382</id>
+    <name>Tacoma Dome</name>
+    <location>
+      <city>Tacoma</city>
+      <country>United States</country>
+      <street>2727 East D Street</street>
+      <postalcode>98421</postalcode>
+      <geo:point>
+         <geo:lat>47.23634</geo:lat>
+         <geo:long>-122.426834</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8783382+Tacoma+Dome</url>
+    <website>http://www.tacomadome.org</website>
+    <phonenumber>253-272-3663</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/578379.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/578379.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/578379.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/578379.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/578379/Tacoma+Dome.jpg</image>
+  </venue>    <startDate>Sat, 31 Aug 2013 11:11:01</startDate>
+  <description><![CDATA[<div class="bbcode"><a href="http://www.last.fm/music/Taylor+Swift" class="bbcode_artist">Taylor Swift</a> <a href="http://www.last.fm/music/Ed+Sheeran" class="bbcode_artist">Ed Sheeran</a></div>]]></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>7</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3454845</tag>    
+  <url>http://www.last.fm/event/3454845+Taylor+Swift+at+Tacoma+Dome+on+31+August+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459055</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8803615</id>
+    <name>Fargodome</name>
+    <location>
+      <city>Fargo,</city>
+      <country>United States</country>
+      <street>1800 N. University Dr.</street>
+      <postalcode>58102</postalcode>
+      <geo:point>
+         <geo:lat>46.902811</geo:lat>
+         <geo:long>-96.798019</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8803615+Fargodome</url>
+    <website>http://www.fargodome.com/</website>
+    <phonenumber></phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/37566057.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/37566057.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/37566057.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/37566057.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/37566057/Fargodome.jpg</image>
+  </venue>    <startDate>Fri, 06 Sep 2013 05:51:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459055</tag>    
+  <url>http://www.last.fm/event/3459055+Taylor+Swift+at+Fargodome+on+6+September+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>country</tag>
+      <tag>female vocalists</tag>
+      <tag>british</tag>
+      <tag>taylor swift</tag>
+      <tag>soul</tag>
+    </tags>
+    </event>    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <id>3459056</id>
+  <title>Taylor Swift</title>
+  <artists>
+    <artist>Taylor Swift</artist>
+    <artist>Ed Sheeran</artist>
+    <headliner>Taylor Swift</headliner>
+  </artists>
+    <venue>
+    <id>8781187</id>
+    <name>Xcel Energy Center</name>
+    <location>
+      <city>Saint Paul</city>
+      <country>United States</country>
+      <street>199 West Kellogg Blvd.</street>
+      <postalcode>55102</postalcode>
+      <geo:point>
+         <geo:lat>44.943807</geo:lat>
+         <geo:long>-93.101028</geo:long>
+      </geo:point>
+    </location>
+    <url>http://www.last.fm/venue/8781187+Xcel+Energy+Center</url>
+    <website>http://www.xcelenergycenter.com/</website>
+    <phonenumber>(651) 265-4800</phonenumber>
+    <image size="small">http://userserve-ak.last.fm/serve/34/45953989.jpg</image>
+	<image size="medium">http://userserve-ak.last.fm/serve/64/45953989.jpg</image>
+	<image size="large">http://userserve-ak.last.fm/serve/126/45953989.jpg</image>
+	<image size="extralarge">http://userserve-ak.last.fm/serve/252/45953989.jpg</image>
+	<image size="mega">http://userserve-ak.last.fm/serve/500/45953989/Xcel+Energy+Center.jpg</image>
+  </venue>    <startDate>Sat, 07 Sep 2013 05:52:01</startDate>
+  <description></description>
+  <image size="small">http://userserve-ak.last.fm/serve/34/81872517.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/81872517.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/81872517.png</image>
+  <image size="extralarge">https://cbsradionews.files.wordpress.com/2016/02/taylor-swift-smiles-getty-946.jpg?w=320&amp;h=180&amp;crop=1</image>
+  <attendance>1</attendance>
+  <reviews>0</reviews>
+  <tag>lastfm:event=3459056</tag>    
+  <url>http://www.last.fm/event/3459056+Taylor+Swift+at+Xcel+Energy+Center+on+7+September+2013</url>
+  <website></website>
+    <tickets>
+  </tickets>
+    <cancelled>0</cancelled>
+    <tags>
+      <tag>folk</tag>
+      <tag>acoustic</tag>
+      <tag>pop</tag>
+      <tag>female vocalists</tag>
+      <tag>country</tag>
+      <tag>british</tag>
+      <tag>soul</tag>
+      <tag>taylor swift</tag>
+    </tags>
+    </event></events></lfm>

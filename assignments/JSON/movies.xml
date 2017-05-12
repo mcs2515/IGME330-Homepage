@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<movies>
+	<movie title="The Shawshank Redemption">
+		<rating>9.3 / 10</rating>
+		<actor name="Morgan Freeman"></actor>
+		<actor name="Tim Robins"></actor>
+	</movie>	
+	<movie title="The Godfather">
+		<rating>9.2 / 10</rating>
+		<actor name="Al Pacino"></actor>
+	</movie>
+	<movie title="The Godfather: Part II">
+		<rating>9.0 / 10</rating>
+		<actor name="John Cazale"></actor>
+	</movie>
+	<movie title="The Dark Knight">
+		<rating>9.0 / 10</rating>
+		<actor name="Heath Ledger"></actor>
+		<actor name="Christian Bale"></actor>
+		<actor name="Aaron Eckhart"></actor>
+	</movie>
+	<movie title="Schindler's List">
+		<rating>8.9 / 10</rating>
+		<actor name="Ben Kingsley"></actor>
+		<actor name="Embeth Davidtz"></actor>
+	</movie>
+</movies>

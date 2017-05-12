@@ -1,0 +1,41 @@
+<movies>
+    
+	<movie rating="8.9" budget="15" boxOffice="289.1">
+		<title>Spirited Away</title>
+		<actor>Daveigh Chase</actor>
+		<actor>Jason Marsden</actor>
+		<actor>	Suzanne Pleshette</actor>
+        <image>http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/58967984376.png</image>
+	</movie>
+    
+	<movie rating="8.7" budget="24" boxOffice="234">
+		<title>Howl's Moving Castle</title>
+		<actor>Christian Bale</actor>
+		<actor>Emily Mortimer</actor>
+		<actor>Billy Crystal</actor>
+        <image>https://img.buzzfeed.com/buzzfeed-static/static/2015-07/15/17/enhanced/webdr13/edit-31132-1436995248-5.jpg</image>
+	</movie>
+    
+	<movie rating="7.3" budget="20" boxOffice="54">
+		<title>The Cat Returns</title>
+		<actor>Cary Elwes</actor>
+        <actor>Peter Boyle</actor>
+		<actor>Elliott Gould</actor>
+        <image>https://d1m6vmmwsgiy3l.cloudfront.net/images/screenshots/screenshot_8_26249.jpg</image>
+	</movie>
+    
+	<movie rating="7.6" budget="N/A" boxOffice="18.4">
+		<title>Summer Wars</title>
+		<actor>Brina Palencia</actor>
+        <actor>Michael Sinterniklaas</actor><image>http://www.pixelcreation.fr/fileadmin/img/sas_image/galerie/animation_3d/Summer%20wars/22%20Summer%20Wars.jpg</image>
+	</movie>
+    
+	<movie rating="8.8" budget="23.5" boxOffice="159.4">
+		<title>Princess Mononoke</title>
+		<actor>Billy Crudup</actor>
+		<actor>Claire Danes</actor>
+		<actor> Minnie Driver</actor>
+        <image>http://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2011/12/princess-mononoke_592x299-7.jpg</image>
+	</movie>
+
+</movies>

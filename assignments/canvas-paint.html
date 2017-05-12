@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Canvas Paint App</title>
+	 <style>
+      body {
+         background: #eeeeee;
+         font-family: tahoma, verdana, sans serif;
+      }
+
+      #mainCanvas {
+         background: #ffffff;
+         position:absolute;
+         z-index: 0;
+         left: 10px;
+         top: 10px;
+         box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+      }
+      
+      
+      #controls {
+         position: absolute;
+          z-index: 2;
+         left: 25px;
+         top: 25px;
+      }
+      
+      label{
+      	font-size: 12px;
+      	margin-right:0.75em;
+      }
+         
+      #topCanvas{
+        background: rgba(0,0,0,0);
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+        cursor: pointer;
+        /*pointer-events: none;*/
+      }
+      
+    </style>
+    
+	<script>
+	"use strict";
+	window.onload = init;
+	
+	// GLOBALS
+	var canvas,ctx,dragging=false,lineWidth,strokeStyle, currentTool, fillStyle, origin, topCanvas, topCtx, startMouseX, startMouseY, x, y, w, h, distance, gradient, isGradient;
+	
+	// CONSTANTS
+	var DEFAULT_LINE_WIDTH= 3;
+    var DEFAULT_STROKE_STYLE= "red";    
+    var DEFAULT_FILL_STYLE= "blue";    
+    var TOOL_PENCIL= "toolPencil";    
+    var TOOL_RECTANGLE= "toolRectangle";    
+    var TOOL_LINE= "toolLine";
+    var TOOL_CIRCLE="toolCircle";
+	
+	// FUNCTIONS
+	function init(){
+		// initialize some globals
+		canvas = document.querySelector('#mainCanvas');
+		ctx = canvas.getContext('2d');
+        
+        topCanvas= document.querySelector('#topCanvas');
+        top.topCtx = topCanvas.getContext('2d');
+		
+		lineWidth= DEFAULT_LINE_WIDTH;
+        strokeStyle= DEFAULT_STROKE_STYLE;
+        fillStyle=DEFAULT_FILL_STYLE;
+        currentTool=TOOL_PENCIL;
+        origin= {}; //empty object
+
+        
+        //set initial properties of both graphics context
+        topCtx.lineWidth=ctx.lineWidth= lineWidth;
+        topCtx.strokeStyle=ctx.strokeStyle= strokeStyle;
+        topCtx.fillStyle=ctx.fillStyle= fillStyle;
+        topCtx.lineCap=ctx.lineCap= "round";
+        topCtx.lineJoin=ctx.lineJoin= "round";
+        
+        //ctx.lineCap= "round";
+        // ctx.lineJoin= "round";
+        
+        drawGrid(ctx, 'lightgray', 10,10);
+        
+        
+        canvas.onmousedown= doMousedown;
+        canvas.onmousemove= doMousemove;
+        canvas.onmouseup= doMouseup;
+        canvas.onmouseout= doMouseout;
+        
+        topCanvas.onmousedown= doMousedown;
+        topCanvas.onmousemove= doMousemove;
+        topCanvas.onmouseup= doMouseup;
+        topCanvas.onmouseout= doMouseout;
+
+        document.querySelector('#lineWidthChooser').onchange= doLineWidthChange;
+        document.querySelector('#strokeStyleChooser').onchange= doStrokeStyleChange;
+        document.querySelector('#clearButton').onclick= doClear;
+        document.querySelector('#exportButton').onclick= doExport;
+        
+        document.querySelector('#toolChooser').onchange=function(e){
+            currentTool= e.target.value;
+            console.log("currentTool= " + currentTool);
+        }
+        
+        document.querySelector('#fillStyleChooser').onchange=function(e){
+            
+            if(e.target.value=="gradient"){
+                //gradient= ctx.createLinearGradient(0,0, canvas.width, canvas.height);
+//                gradient.addColorStop(0, "red");
+//                gradient.addColorStop(1/5, "orange");
+//                gradient.addColorStop(2/5, "yellow");
+//                gradient.addColorStop(3/5, "green");
+//                gradient.addColorStop(4/5, "blue");
+//                gradient.addColorStop(1, "magenta");
+                 isGradient=true;
+                //fillStyle= gradient;
+            }
+            else{
+                isGradient=false;
+                fillStyle= e.target.value;
+            }
+            
+            console.log("fillStyle= " + fillStyle);
+        }
+	}
+	
+    function doLineWidthChange(e){
+        lineWidth=e.target.value;
+    }
+        
+    function doStrokeStyleChange(e){
+        strokeStyle=e.target.value;
+    }
+        
+    function clearTopCanvas(){
+        //console.log("top cleared");
+        topCtx.clearRect(0,0, topCtx.canvas.width, topCtx.canvas.height);
+    }
+        
+	
+	// EVENT CALLBACK FUNCTIONS
+	function doMousedown(e){
+		//console.log(e.type);
+        
+        dragging=true;
+        
+        //get locatin of mouse in cavas coordinates
+        var mouse = getMouse(e);
+        
+        switch(currentTool){
+            case TOOL_PENCIL:
+                ctx.beginPath();
+                //move pen to mouse location
+                ctx.moveTo(mouse.x, mouse.y);
+                break;
+                
+            case TOOL_RECTANGLE:
+            
+            case TOOL_CIRCLE:
+                
+            case TOOL_LINE:
+                origin.x= mouse.x;
+                origin.y=mouse.y;
+                break;
+        }
+	}
+ 
+ 	function doMousemove(e) {
+        //bail out if mouse button is not down
+        if(!dragging) return;
+        
+        var mouse=getMouse(e);
+        
+        
+        switch(currentTool){
+            case TOOL_PENCIL:
+                ctx.lineWidth= lineWidth;
+                ctx.strokeStyle= strokeStyle;
+
+                //move pen to mouse location
+                ctx.lineTo(mouse.x, mouse.y);
+                //ctx.moveTo(mouse.x, mouse.y);
+                ctx.stroke();
+                break;
+                
+            case TOOL_RECTANGLE:
+                x= Math.min(mouse.x, origin.x);
+                y= Math.min(mouse.y, origin.y);
+                w= Math.abs(mouse.x- origin.x);
+                h= Math.abs(mouse.y- origin.y);
+                
+            if(isGradient){
+                gradient= ctx.createLinearGradient(origin.x,origin.y, mouse.x, mouse.y);
+                gradient.addColorStop(0, "red");
+                gradient.addColorStop(1/5, "orange");
+                gradient.addColorStop(2/5, "yellow");
+                gradient.addColorStop(3/5, "green");
+                gradient.addColorStop(4/5, "blue");
+                gradient.addColorStop(1, "magenta");
+                fillStyle= gradient;
+            }
+                
+                //fill rectangle
+                topCtx.strokeStyle= strokeStyle;
+                topCtx.fillStyle=fillStyle;
+                topCtx.lineWidth= lineWidth;
+                
+                //erase old rectangle
+                clearTopCanvas();
+                
+                //draw new rectangle
+                topCtx.save();
+                topCtx.globalAlpha=.3;
+                topCtx.fillRect(x,y,w,h);
+                topCtx.strokeRect(x,y,w,h);
+                topCtx.restore();     
+                
+                break;
+                
+            case TOOL_CIRCLE:
+                
+            distance = Math.sqrt(Math.pow(mouse.x-origin.x,2)+ Math.pow(mouse.y-origin.y,2));
+                
+            if(isGradient){
+                gradient= ctx.createRadialGradient(origin.x,origin.y, 1,origin.x,origin.y, distance);
+                gradient.addColorStop(0, "red");
+                gradient.addColorStop(1/5, "orange");
+                gradient.addColorStop(2/5, "yellow");
+                gradient.addColorStop(3/5, "green");
+                gradient.addColorStop(4/5, "blue");
+                gradient.addColorStop(1, "magenta");
+                fillStyle= gradient;
+            }
+                
+                clearTopCanvas();
+                
+                topCtx.strokeStyle= strokeStyle;
+                topCtx.fillStyle=fillStyle;
+                topCtx.lineWidth= lineWidth;
+                
+                topCtx.beginPath();
+                topCtx.arc(origin.x, origin.y, distance, 0, Math.PI*2)
+                topCtx.closePath();
+                topCtx.fill();
+                topCtx.stroke();
+                
+                break;
+                
+            case TOOL_LINE:
+                topCtx.lineWidth= lineWidth;
+                topCtx.strokeStyle= strokeStyle;
+                
+                clearTopCanvas();
+                
+                topCtx.beginPath();
+                topCtx.moveTo(origin.x, origin.y);  
+                topCtx.lineTo(mouse.x, mouse.y);
+                topCtx.closePath();
+ 
+                topCtx.stroke();
+                break;
+
+        }
+        
+	}
+	
+	function doMouseup(e) {
+
+		//console.log(e.type);
+        
+        switch(currentTool){
+            case TOOL_PENCIL:
+                ctx.closePath();
+                break;
+                
+            case TOOL_RECTANGLE:
+                topCtx.globalAlpha=1;
+                topCtx.fillRect(x,y,w,h);
+                topCtx.strokeRect(x,y,w,h);
+                
+            case TOOL_CIRCLE:
+                    
+            case TOOL_LINE:
+                if(dragging){
+                    ctx.drawImage(topCanvas,0,0);
+                    clearTopCanvas();
+                }
+                break;
+        }
+        
+        dragging=false;
+        
+	}
+	
+	// if the user drags out of the canvas
+	function doMouseout(e) {
+        
+		//console.log(e.type);
+        
+        switch(currentTool){
+            case TOOL_PENCIL:
+                ctx.closePath();
+                break;
+                
+            case TOOL_RECTANGLE:
+            
+            case TOOL_CIRCLE:
+                
+            case TOOL_LINE:
+                //cancel the drawing
+                clearTopCanvas();
+                break;
+        }
+        
+        dragging=false;
+	}
+	
+	function doClear(){
+		ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+        clearTopCanvas();
+		drawGrid(ctx,'lightgray', 10, 10);
+        console.log("cleared");
+	}
+	
+	function doExport(){
+		// open a new window and load the image in it
+		// http://www.w3schools.com/jsref/met_win_open.asp
+		var data = canvas.toDataURL(); 
+		var windowName = "canvasImage";
+		var windowOptions = "left=0,top=0,width=" + canvas.width + ",height=" + canvas.height +",toolbar=0,resizable=0";
+		var myWindow = window.open(data,windowName,windowOptions);
+		myWindow.resizeTo(canvas.width,canvas.height); // needed so Chrome would display image
+	 }
+	
+	
+	// UTILITY FUNCTIONS
+	/*
+	These utility functions do not depend on any global variables being in existence, 
+	and produce no "side effects" such as changing ctx state variables.
+	They are "pure functions" - see: http://en.wikipedia.org/wiki/Pure_function
+	*/
+	
+	// Function Name: getMouse()
+	// returns mouse position in local coordinate system of element
+	// Author: Tony Jefferson
+	// Last update: 3/1/2014
+	function getMouse(e){
+		var mouse = {}
+		mouse.x = e.pageX - e.target.offsetLeft;
+		mouse.y = e.pageY - e.target.offsetTop;
+		return mouse;
+	}
+	
+	/*
+	Function Name: drawGrid()
+	Description: Fills the entire canvas with a grid
+	Last update: 9/1/2014
+	*/
+	function drawGrid(ctx, color, cellWidth, cellHeight){
+		// save the current drawing state as it existed before this function was called
+		ctx.save()
+		
+		// set some drawing state variables
+		ctx.strokeStyle = color;
+		ctx.fillStyle = '#ffffff';
+		ctx.lineWidth = 0.5;
+		ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+		
+		// vertical lines all set!
+		for (var x = cellWidth + 0.5; x < ctx.canvas.width; x += cellWidth) {
+			ctx.beginPath();
+			ctx.moveTo(x, 0);
+			ctx.lineTo(x, ctx.canvas.height);
+			ctx.stroke();
+		}
+		
+		/*
+			Need horizontal lines!
+			You write it!
+		*/
+        
+        ctx.strokeStyle= 'lightgray';
+        for(var y=cellWidth + 0.5; y< ctx.canvas.height; y+=cellWidth)
+        {
+            ctx.beginPath();
+            ctx.moveTo(0, y);
+            ctx.lineTo(canvas.width, y);
+            ctx.stroke();
+        }
+		
+		
+		// restore the drawing state
+		ctx.restore();
+	}
+	
+	
+	</script>
+</head>
+<body>
+	<canvas id="mainCanvas" width="700" height="500">
+	Get a real browser!
+	</canvas>
+    
+    <canvas id="topCanvas" width="700" height="500">
+	Get a real browser!
+	</canvas>
+	
+	<div id="controls">
+		<label>Tool:
+			<select id="toolChooser">
+				<option value="toolPencil">Pencil</option>
+				<option value="toolRectangle">Rectangle</option>
+				<option value="toolLine">Line</option>
+                <option value="toolCircle">Circle</option>
+    		</select>
+    	</label>
+    	
+        <label>Stroke Color:
+            <select id="strokeStyleChooser">
+                <option value="red" selected> Red</option>
+                <option value="green" > Green</option>
+                <option value="blue" > Blue</option>
+                <option value="purple" > Purple</option>
+                <option value="black" > Black</option>
+            </select>
+        
+        </label>
+    	<label>Line Width: 
+			<select id="lineWidthChooser">
+				<option value="1">1</option>
+				<option value="2">2</option>
+        		<option value="3" selected>3</option>
+        		<option value="4">4</option>
+				<option value="5">5</option>
+        		<option value="6">6</option>
+        		<option value="7">7</option>
+				<option value="8">8</option>
+        		<option value="9">9</option>
+        		<option value="10">10</option>
+    		</select>
+    	</label>
+    	
+        <label>Fill Color:
+			<select id="fillStyleChooser">
+				<option value="red" > Red</option>
+                <option value="green" > Green</option>
+                <option value="blue" selected > Blue</option>
+                <option value="purple" > Purple</option>
+                <option value="black" > Black</option>
+                <option value="gradient" > Gradient</option>
+    		</select>
+    	</label>
+    	
+    	<span><input id="clearButton" type="button" value="Clear"/></span>
+    	<span><input id="exportButton" type="button" value="Export"/></span>
+    </div>
+
+</body>
+</html>

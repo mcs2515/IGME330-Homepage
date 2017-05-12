@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Megan Smith 330</title>
+    <link REL="StyleSheet" TYPE="text/css" HREF="index.css">
+    <meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />	
+        
+	<script>
+		// #0 - In this course we will always use ECMAScript 5's "strict" mode
+		// See what 'use strict' does here:
+		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode
+		'use strict';
+		
+		// #1 call the init function after the pages loads
+		// this is called an "event handler"
+		window.onload = init;
+        
+        var canvas;
+        var ctx;
+        
+		function init(){
+            
+			// #2 Now that the page has loaded, start drawing!
+			console.log('init called');
+			
+			// A - canvas variable points at <canvas> tag
+		    canvas= document.querySelector('canvas');
+			
+			// B - the ctx variable points at a "2D drawing context"
+			ctx= canvas.getContext('2d');
+            
+            
+            //horizontalalignment
+            ctx.textAlign = "center" ;
+            //verticalalignment
+            ctx.textBaseline = "middle";
+            
+            ctx.save();
+            //shadow 
+            ctx.shadowColor="#8c95ff";
+            ctx.shadowOffsetX=0;
+            ctx.shadowOffsetY=0;
+            ctx.shadowBlur=20;
+            
+			// C - all fill operations are now in yellow
+			//ctx.fillStyle='yellow';
+			ctx.fillStyle= "rgba(32,43,92, 1)";
+            
+			//blue background
+			ctx.fillRect(0,0,canvas.width,canvas.height);
+            drawCircles(10, "rgba(255, 255, 255, .3)");
+            
+            //cursive name
+            ctx.font="bold 45pt Cedarville Cursive";
+            ctx.fillStyle= "#fef4d1";
+            ctx.fillText('Megan Smith',345, 140);
+            ctx.restore();
+            
+            //underline
+            ctx.strokeStyle="white";
+            ctx.lineWidth=2;
+            ctx.beginPath();
+            ctx.moveTo(65,170);
+            ctx.lineTo(520, 170);
+            ctx.closePath();
+            ctx.stroke();
+
+			//the two circles
+            ctx.strokeStyle= "#132058"
+            ctx.fillStyle= "#3D59C6";
+            ctx.lineWidth=2;
+            ctx.font="20pt Righteous";
+            ctx.fillText('IGM330',105, 150);
+            ctx.strokeText('IGM330',105, 150);
+            
+            ctx.save();
+            ctx.lineWidth=2;
+            ctx.scale(1,.5);
+            ctx.beginPath();
+			ctx.arc(35, 300, 10, 0, Math.PI*2, false); 
+			ctx.closePath();
+ 			ctx.fill();
+            ctx.stroke();
+            
+            ctx.beginPath();
+			ctx.arc(560, 300, 10, 0, Math.PI*2, false); 
+			ctx.closePath();
+ 			ctx.fill();
+            ctx.stroke();
+            ctx.restore();
+        
+        }
+        
+        function drawCircles(number, color) {
+            for(var i = 0; i <= number; i++) 
+            {
+                var x = Math.random() * 600;
+                var y = Math.random() * 300;
+                var radius = Math.random() * 40;
+                circleObj(x, y, radius, color);
+                //console.log("this is working");
+            }
+        }
+        
+        function circleObj(x, y, radius, color) {
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI*2, true);
+            ctx.closePath();
+            ctx.fill();
+        }
+	</script>
+</head>
+    
+<body>
+	<canvas width="600" height="300">
+		Get a real browser!
+		<!-- The user will only see the above text if their browser is older and doesn't support <canvas> -->
+	</canvas>
+    
+    <div id= "banner"></div>
+    
+    <div id= "content"> 
+        <di id="profile">
+        <div id="photoBox">
+            <img id= "profileImage" src= "me.jpg" alt="Megan Smith"/>
+            <div id="desc"> Kitten for 10 dollars off...good deal. Take the kitty.</div>
+        </div>
+				
+        <div id="bio">
+            <h2>About Me</h2>
+            <p id= "info">My career interests are mobile app developement and web design. 
+            I want to code or design puzzle games for cellphones as my first choice. I think it would
+            even be cooler if I could code or design an app for medical or health use.
+            It makes me happy to see that my work is honestly helping someone else. If I fail to find a good
+            fit for me in the mobile app industry, I would like to help create websites for medical companies.</p>
+        </div>
+        </di>
+    
+    <div id="links">  
+        <div id="projLinks">
+            <h3>Links to Projects</h3>
+            <a class= "homeworkLink" href="projects/project1/audio-visualizer.html" target= "_blank"> Audio Visualizer</a> <br/> 
+            <a class= "homeworkLink" href="projects/project2/index.html" target= "_blank"> Game of Experience</a> <br/>
+            <a class= "homeworkLink" href="" target= "_blank"> Web Service App</a> <br/>
+            <a class= "homeworkLink" href="" target= "_blank"> Cloud Service App</a>
+        </div>
+        
+        <div id="assLinks">
+            <h3>Links to Assignments</h3>	
+            <a class= "homeworkLink" href="assignments/sg-1.html" target= "_blank"> Smiley ICE</a> <br/>
+            <a class= "homeworkLink" href="assignments/try-it-1/try-it-1.html" target= "_blank"> try-it-1</a> <br/>
+            <a class= "homeworkLink" href="assignments/shape-viewer-app.html" target= "_blank"> shape-viewer</a> <br/>
+            <a class= "homeworkLink" href="assignments/LineDemoD/2-1-line-cap-and-join.html" target= "_blank"> LineDemoD</a> <br/>
+            <a class= "homeworkLink" href="assignments/moving-curves.html" target= "_blank"> moving-curves</a> <br/>
+            <a class= "homeworkLink" href="assignments/speed-circles/speed_circles.html" target= "_blank"> speed-circles</a> <br/>
+            <a class= "homeworkLink" href="assignments/canvas-paint.html" target= "_blank">canvas-paint</a> <br/>
+            <a class= "homeworkLink" href="assignments/web audio/web-audio-visualizer.html" target= "_blank">audio-visualizer</a> <br/>
+            <a class= "homeworkLink" href="assignments/Boomshine/boomshine.html" target= "_blank">Boomshine</a> <br/>
+            <a class= "homeworkLink" href="assignments/grid-reader/grid.html" target= "_blank">AJAX Grid Reader</a> <br/>
+            <a class= "homeworkLink" href="assignments/xml/jokes.html" target= "_blank">AJAX XML</a> <br/>
+            <a class= "homeworkLink" href="assignments/JSON/jokes-JSON.html" target= "_blank">AJAX JSON</a> <br/>
+            <a class= "homeworkLink" href="assignments/get-events.html" target= "_blank">Web API</a> <br/>
+
+        </div>       
+    </div>
+    
+    <p style="font-family: 'Cedarville Cursive'; Visibility: hidden; ">tofu</p>
+    <p style="font-family: 'Righteous'; Visibility: hidden; ">rice</p>
+    </div>
+</body>
+    
+<footer>
+    <h5 id= "copyright">&copy; Copyright 2016 
+        <br />
+        Megan Smith
+        <br/>
+        <br/>
+        <a target="_blank" href= https://www.linkedin.com/in/meganchunyusmith> <img id="linkedin" class="contactsLogos" src="media/linkedIn_Logo.png" alt="Linkedin Logo" width="35" height=auto> </a>
+        <a target="_blank" href= https://zhera601.deviantart.com> <img id="deviantart" class="contactsLogos" src="media/deviantArt_Logo.png" alt="DeviantArt Logo" width="35" height=auto hspace="10"> </a>
+        <a target="_blank" href= https://www.github.com/mcs2515><img id="github" class="contactsLogos" src="media/github_Logo.png" alt="Github Logo" width="35" height=auto></a>
+        <br/> 
+    </h5>
+</footer>
+</html>

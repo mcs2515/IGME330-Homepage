@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Web Audio Visualizer</title>
+	<style>
+	body {
+         background: #eeeeee;
+         font-family: tahoma, verdana, sans serif;
+      }
+
+      canvas {
+        margin-left:10px;
+        margin-top:10px;
+        box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+        background: black;
+    }
+      
+      #controls{
+      	margin-left:10px;
+        margin-top:10px;
+      }
+	</style>
+	<script>
+	// An IIFE ("Iffy") - see the notes in mycourses
+	(function(){
+		"use strict";
+		
+		var NUM_SAMPLES = 256;
+		var SOUND_1 = 'media/New Adventure Theme.mp3';
+		var SOUND_2 = 'media/Peanuts Theme.mp3';
+		var SOUND_3 = 'media/The Picard Song.mp3';
+		var audioElement;
+		var analyserNode;
+		var canvas,ctx, maxRadius, greyScale;
+		var invert=false, tintRed=false, noise=false, lines=false;//, grey=false;
+        
+		function init(){
+			// set up canvas stuff
+			canvas = document.querySelector('canvas');
+			ctx = canvas.getContext("2d");
+            
+            //returns the max radius value
+            maxRadius= (function(){
+                return document.querySelector("#slider1").value;
+            });
+            
+            //returns the grey scale value
+            greyScale= (function(){
+                return document.querySelector("#slider2").value;
+            });
+            
+            //call the checkfunc method, sending the box id names and an anonymous function that sets a value
+            checkfunc("invertCheckbox", function(v) { invert = v; });
+            checkfunc("redCheckbox", function(v) { tintRed = v; });
+            checkfunc("noiseCheckbox", function(v) { noise = v; });
+            checkfunc("linesCheckbox", function(v) { lines = v; });
+            //checkfunc("greyCheckbox", function(v) { grey = v; });
+			
+			// get reference to <audio> element on page
+			audioElement = document.querySelector('audio');
+			
+			// call our helper function and get an analyser node
+			analyserNode = createWebAudioContextWithAnalyserNode(audioElement);
+			
+			// get sound track <select> and Full Screen button working
+			setupUI();
+			
+			// load and play default sound into audio element
+			playStream(audioElement,SOUND_1);
+			
+			// start animation loop
+			update();
+		}
+        
+        function checkfunc(boxName, changeVal) {
+            document.getElementById(boxName).onchange = function(e){
+                changeVal(e.target.checked);
+                manipulatePixels();
+//                    var msg = "";
+//                    if( e.target.checked){
+//                        msg = "checked";
+//                    }
+//                    document.querySelector("#checkboxResults").innerHTML = msg;
+            };
+        }
+		
+		
+		function createWebAudioContextWithAnalyserNode(audioElement) {
+			var audioCtx, analyserNode, sourceNode;
+			// create new AudioContext
+			// The || is because WebAudio has not been standardized across browsers yet
+			// http://webaudio.github.io/web-audio-api/#the-audiocontext-interface
+			audioCtx = new (window.AudioContext || window.webkitAudioContext);
+			
+			// create an analyser node
+			analyserNode = audioCtx.createAnalyser();
+			
+			/*
+			We will request NUM_SAMPLES number of samples or "bins" spaced equally 
+			across the sound spectrum.
+			
+			If NUM_SAMPLES (fftSize) is 256, then the first bin is 0 Hz, the second is 172 Hz, 
+			the third is 344Hz. Each bin contains a number between 0-255 representing 
+			the amplitude of that frequency.
+			*/ 
+			
+			// fft stands for Fast Fourier Transform
+			analyserNode.fftSize = NUM_SAMPLES;
+			
+			// this is where we hook up the <audio> element to the analyserNode
+			sourceNode = audioCtx.createMediaElementSource(audioElement); 
+			sourceNode.connect(analyserNode);
+			
+			// here we connect to the destination i.e. speakers
+			analyserNode.connect(audioCtx.destination);
+			return analyserNode;
+		}
+		
+		function setupUI(){
+			document.querySelector("#trackSelect").onchange = function(e){
+				playStream(audioElement,e.target.value);
+			};
+			
+			document.querySelector("#fsButton").onclick = function(){
+				requestFullscreen(canvas);
+			};
+            
+           
+		}
+        
+		
+		function playStream(audioElement,path){
+			audioElement.src = path;
+			audioElement.play();
+			audioElement.volume = 0.2;
+			document.querySelector('#status').innerHTML = "Now playing: " + path;
+		}
+		
+		function update() { 
+			// this schedules a call to the update() method in 1/60 seconds
+			requestAnimationFrame(update);
+			
+			/*
+				Nyquist Theorem
+				http://whatis.techtarget.com/definition/Nyquist-Theorem
+				The array of data we get back is 1/2 the size of the sample rate 
+			*/
+			
+			// create a new array of 8-bit integers (0-255)
+			var data = new Uint8Array(NUM_SAMPLES/2); 
+			
+			// populate the array with the frequency data
+			// notice these arrays can be passed "by reference" 
+			analyserNode.getByteFrequencyData(data);
+		
+			// OR
+			//analyserNode.getByteTimeDomainData(data); // waveform data
+			
+			// DRAW!
+			ctx.clearRect(0,0,800,600);  
+//			var barWidth = 4;
+//			var barSpacing = 1;
+//			var barHeight = 100;
+//			var topSpacing = 50;
+
+			// loop through the data and draw!
+			for(var i=0; i<data.length; i++) { 
+				ctx.fillStyle = 'rgba(0,255,0,0.6)'; 
+    
+				// the higher the amplitude of the sample (bin) the taller the bar
+				// remember we have to draw our bars left-to-right and top-down
+				//ctx.fillRect(i * (barWidth + barSpacing),topSpacing + 256-data[i],barWidth,barHeight); 
+                
+                //drawinvertedbars
+                //ctx.fillRect(640-i*(barWidth+barSpacing),topSpacing+256-data[i]-20,barWidth,barHeight);
+                
+                //get i-1 else if j is below 0, set j=0
+                var j = Math.max(i-1, 0); 
+                //get previous point x
+                var x0 = canvas.width / data.length * j; //equally distribute the data across canvas
+                //get current x
+                var x = canvas.width / data.length * i; //equally distribute the data across canvas
+                //same stuff from above
+                var y0 = canvas.height - data[j]; //draw from the bottom,rather form the top
+                var y = canvas.height - data[i];
+                
+                //wave visual
+                ctx.save();
+                
+                ctx.strokeStyle= "purple";
+                ctx.lineWidth = 2;
+				//setshadowproperties
+                ctx.shadowColor="yellow";
+                ctx.shadowOffsetX=0;
+                ctx.shadowOffsetY=0;
+                ctx.shadowBlur=20;
+                
+                //begin line
+                ctx.beginPath();
+                //draw from previous x, y
+                ctx.moveTo(x0,y0);
+                //draw to the next x,y
+				ctx.lineTo(x, y);
+                ctx.closePath();
+                ctx.stroke();
+                ctx.restore();
+                
+                //red-ish circles
+                var percent=data[i]/255;
+                //var maxRadius=200;
+                var circleRadius=percent*maxRadius();
+                ctx.beginPath();
+                ctx.fillStyle=makeColor(255,111,111,.34-percent/3.0);
+                ctx.arc(canvas.width/2,canvas.height/2,circleRadius,0,2*Math.PI,false);ctx.fill();
+                ctx.closePath();
+                
+                //blueish circles,bigger,moretransparent
+                ctx.beginPath();
+                ctx.fillStyle=makeColor(0,0,255,.10-percent/10.0);
+                ctx.arc(canvas.width/2,canvas.height/2,circleRadius*1.5,0,2*Math.PI,false);
+                ctx.fill();
+                ctx.closePath();
+                
+                //yellowish circles smaller
+                ctx.save();
+                ctx.beginPath();
+                ctx.fillStyle=makeColor(200,200,0,.5-percent/5.0);
+                ctx.arc(canvas.width/2,canvas.height/2,circleRadius*.50,0,2*Math.PI,false);
+                ctx.fill();
+                ctx.closePath();
+			}
+            
+            manipulatePixels();
+		} 
+		
+		// HELPER
+		function makeColor(red, green, blue, alpha){
+   			var color='rgba('+red+','+green+','+blue+', '+alpha+')';
+   			return color;
+		}
+        
+        function manipulatePixels(){
+            //i) Get all of the rgba pixel data of the canvas by grabbing the image data
+            var imageData=ctx.getImageData(0,0,canvas.width, canvas.height);
+            
+            //ii)imageData.data is an 8-bit  typed array- values range from 0-255
+            //imageData.data contains 4 values per pixel: 4 x canvas.width x
+            //canvas.height = 10240000 values!
+            //we are looping through this 60 fps-wow
+            var data = imageData.data;
+            var length = data.length;
+            var width = imageData.width;
+            var callGrey= greyScale();
+            
+            //iii)Iteratethrougheachpixel
+            //we step by 4 so that we can manipulate pixel per iteration
+            //data[i]is the red value
+            //data[i+1]is the green value
+            //data[i+2]is the blue value
+            //data[i+3]is the alpha value
+            for(var i=0; i<length; i+=4){
+                //increase red value only
+                if(tintRed){
+                    data[i]= data[i]+100; //just the red channel this time
+                }
+                if(invert){
+                    var red=data[i], green=data[i+1], blue=data[i+2];
+                    data[i]=255-red;        //set red value
+                    data[i+1]=255-green;    //set blue value
+                    data[i+2]=255-blue;     //set green value
+                    //data[i+3] is the alpha but we are leaving it alone
+                }
+                if(noise&&Math.random()<.10){
+                    data[i]=data[i+1]=data[i+2]=128 //gray noise
+                    //data[i]=data[i+1]=data[i+2]=255; //or white noise
+                    //data[i]=data[i+1]=data[i+2]=0; //or back noise
+                    data[i+3]=255; //alpha
+                }
+                if(lines){
+                    var row= Math.floor(i/4/width);
+                    if(row%50==0){
+                        //this row
+                        data[i]=data[i+1]= data[i+2]= data[i+3]=255;
+                        
+                        //next row
+                        data[i+(width*4)]=
+                        data[i+(width*4)+1]=
+                        data[i+(width*4)+2]=
+                        data[i+(width*4)+3]=255;
+                    }
+                }
+            
+              
+            //let c equal the value on the scale between 0----->1
+            //we want to go from [r,g,b]----->[gr,gr,gr]  //let gr equal the color grey
+            // (1-c)*[r,g,b] + c*[gr,gr,gr]   if c= 0, we get rgb, else if c=1 we get gr    
+                
+             var average = (data[i]+ data[i+1]+ data[i+2])/3; //getting a grey valuev "gr"
+             var saturated = callGrey*average; //depending on the scale value, change between grey to normal rgb values "c*gr"
+             var oppositeVal= (1-callGrey); //if callGrey=0, we get rgb, else if callGrey=1, we get grey "1-c"
+                
+            // (1-c)*[r] + c[gr]    
+             data[i] = oppositeVal* data[i] + saturated;
+            // (1-c)*[g] + c[gr]  
+             data[i+1] = oppositeVal* data[i+1] + saturated;
+            // (1-c)*[b] + c[gr]  
+             data[i+2] = oppositeVal* data[i+2] + saturated;
+
+              // red
+              // green
+              // blue
+                
+            }
+            
+            //put the modified data back on the canvas
+            ctx.putImageData(imageData,0,0);
+            //console.log("was called");
+        }
+        
+		
+		 // FULL SCREEN MODE
+		function requestFullscreen(element) {
+			if (element.requestFullscreen) {
+			  element.requestFullscreen();
+			} else if (element.mozRequestFullscreen) {
+			  element.mozRequestFullscreen();
+			} else if (element.mozRequestFullScreen) { // camel-cased 'S' was changed to 's' in spec
+			  element.mozRequestFullScreen();
+			} else if (element.webkitRequestFullscreen) {
+			  element.webkitRequestFullscreen();
+			}
+			// .. and do nothing if the method is not supported
+		};
+		
+		
+		window.addEventListener("load",init);
+	}());
+		
+	</script>
+</head>
+<body>
+	<canvas id="canvas" width="640" height="400"></canvas>
+	<div id="controls">
+		<audio controls loop></audio>
+		<label>Track: 
+			<select id="trackSelect" >
+				<option value="media/New Adventure Theme.mp3">New Adventure Theme</option>
+				<option value="media/Peanuts Theme.mp3">Peanuts Theme</option>
+				<option value="media/The Picard Song.mp3">The Picard Song</option>
+			</select>
+		</label>
+		<button id="fsButton">Go Full Screen</button><br>
+		<span>
+            <label for="slider1">Circle Radius: </label>
+            <input id="slider1" type ="range" min ="50" max="300" step ="10" value ="200"/>
+		      <span style="float:right" id="sliderResults"></span>
+            
+            <label for="slider2">Grey Scale: </label>
+            <input id="slider2" type ="range" min ="0" max="1" step =".05" value ="0"/>
+		      <span style="float:right" id="sliderResults"></span>
+
+            <input type="checkbox" id="invertCheckbox">
+			<label for="invertCheckbox">Invert</label> 
+
+            <input type="checkbox" id="noiseCheckbox">
+            <label for="noiseCheckbox">Noise</label>
+
+            <input type="checkbox" id="linesCheckbox">
+            <label for="linesCheckbox">Lines</label>
+            
+            <input type="checkbox" id="redCheckbox">
+            <label for="redCheckbox">Red Tint</label>
+<!--
+            <input type="checkbox" id="greyCheckbox">
+            <label for="greyCheckbox">Grey</label>
+-->
+
+ 
+		</span>
+        <p id="status">Now playing: media/New Adventure Theme.mp3</p>
+	</div>
+</body>
+</html>

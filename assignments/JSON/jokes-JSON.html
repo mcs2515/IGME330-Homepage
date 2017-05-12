@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>XHR JSON Example</title>
+	<style>
+		*{
+			font-family:tahoma,verdana,sans-serif;
+		}
+		
+		.joke{
+			border:1px solid black;
+			padding:5px;
+			margin-bottom:10px;
+		}
+	</style>
+	<script>
+	(function(){
+		"use strict";
+		window.onload = init;
+		
+		function init(){
+			document.querySelector('#mybutton').onclick = loadData;
+		}
+		
+		function loadData(){
+			var xhr = new XMLHttpRequest();
+			xhr.onload = function(){
+				// JSON.parse() converts a string to JSON.
+ 				var myJSON = JSON.parse( xhr.responseText );
+ 				
+ 			//	var myJSON = eval('(' + xhr.responseText + ')');
+ 				var allJokes = myJSON.jokes;
+				document.querySelector('#content').innerHTML = "There are " + allJokes.length + " jokes!";
+                
+                var html="";
+                for(var i=0; i<allJokes.length; i++){
+                    var joke= allJokes[i];
+                    //do some concatenation
+                    html+="<div class='joke'>";
+                    html+="<h3>" + joke.q + "</h3>";
+                    html+="<p><em>"+ joke.a +"</em></p>";
+                    html+="<p> Rating= "+ joke.rating +"</p>";
+                    html+="</div>";
+                    
+                }
+				document.querySelector('#content').innerHTML=html;
+				
+			}
+			
+			var url = "jokes.json";
+			xhr.open('GET',url,true);
+			// try to prevent browser caching by sending a header to the server
+			xhr.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2010 00:00:00 GMT");
+			xhr.send();
+		}
+		
+		
+	
+	}())
+	</script>
+</head>
+<body>
+	<h1>Jokes!</h1>
+	<p><button id='mybutton'>Fetch Data</button></p>
+	<div id='content'></div>
+	
+    <a href= "movies.html"> Movies Json</a>
+</body>
+</html>

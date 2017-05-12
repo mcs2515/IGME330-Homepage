@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <link REL="StyleSheet" TYPE="text/css" HREF="css/index.css">
+	<style>
+		canvas{border:1px solid gray;}
+        #audioControls{display: none;}
+        #head, #food,#bird, #grass, #animate, #body, #title {display: none;}
+	</style>
+	<title>Project 2</title>
+</head>
+<body>
+    <img id="head" width="55" height="68" src="media/bugHead.png" alt=" ">
+    <img id="food" width="100" height="65" src="media/leaf.png" alt=" ">
+    <img id="grass" width="450" height="450" src="media/pattern.png" alt=" ">
+    <img id="bird" width="1964" height="150" src="media/birdSprite_animationReverse.png" alt=" ">
+    <img id="body" width="55" height="68" src="media/bugBody.png" alt=" ">
+    <img id="title" width="1000" height="600" src="media/title.jpg" alt=" ">
+	<canvas>
+		Get a real browser!
+	</canvas>
+    <section class="border"></section>
+    <button id="button1">Let's Eat!</button>
+    
+    <p>
+        <span class="bold">Description:</span> Feed the caterpiller magical leaves so that it can grow super-duper fast. Beware of the birds as they find the caterpillar tastey and may 
+        fly off with parts of its body. So eat or be eaten! <br><br>
+        <span class="bold">Directions:</span> Use either the <span class="bold">mouse</span> or <span class="bold">arrow keys</span> to move on screen. 
+        While using the arrow keys, hold down the <span class="bold">shift</span> key to move faster as long as you have enough energy.
+    </p>
+    
+    <script src='js/loader.js'></script>
+	<script src='js/main.js'></script>
+	<script src='js/utilities.js'></script>
+	<script src='js/keys.js'></script>
+	<script src='js/emitter.js'></script>
+	<script src='js/sound.js'></script>
+ 
+    <section id="audioControls">
+        <audio id="bgAudio" src="media/music/Remembrance.mp3" controls loop></audio>
+        <audio id="effectAudio" src="" controls></audio>
+    </section>
+    
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>XHR JSON Example</title>
+	<style>
+		*{
+			font-family:tahoma,verdana,sans-serif;
+		}
+		
+		.movie{
+			border:1px solid black;
+			padding:5px;
+			margin-bottom:10px;
+		}
+	</style>
+	<script>
+	(function(){
+		"use strict";
+		window.onload = init;
+		
+		function init(){
+			document.querySelector('#mybutton').onclick = loadData;
+		}
+		
+		function loadData(){
+			var xhr = new XMLHttpRequest();
+			xhr.onload = function(){
+				// JSON.parse() converts a string to JSON.
+ 				var myJSON = JSON.parse( xhr.responseText );
+                //var myJSON=eval('('+xhr.responseText+')');
+ 				
+ 			//	var myJSON = eval('(' + xhr.responseText + ')');
+ 				var allMovies = myJSON.movies;
+				document.querySelector('#content').innerHTML = "There are " + allMovies.length + " movies!";
+                
+                var html="";
+                for(var i=0; i<allMovies.length; i++){
+                    var movie= allMovies[i];
+                    //do some concatenation
+                    html+="<div class='movie'>";
+                    html+="<h3>" + movie.title + "</h3>";
+                    html+="<p><em>Actors: ";
+                    
+                    for(var j=0; j<movie.actors.length;j++){
+                        if(j!=movie.actors.length-1){
+                            html +=movie.actors[j]+ ", ";
+                        }
+                        else{
+                            html +=movie.actors[j]
+                        }
+                         
+                    }
+                    html+="</em></p>";
+                    html+="<p> Rating= "+ movie.rating +"</p>";
+                    html+="</div>";
+                    
+                }
+				document.querySelector('#content').innerHTML=html;
+				
+			}
+			
+			var url = "movies.json";
+			xhr.open('GET',url,true);
+			// try to prevent browser caching by sending a header to the server
+			xhr.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2010 00:00:00 GMT");
+			xhr.send();
+		}
+		
+		
+	
+	}())
+	</script>
+</head>
+<body>
+	<h1>Movies!</h1>
+	<p><button id='mybutton'>Fetch Data</button></p>
+	<div id='content'></div>
+    
+    <a href= "jokes-JSON.html"> Jokes Json</a>
+	
+</body>
+</html>

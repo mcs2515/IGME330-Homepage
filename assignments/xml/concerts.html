@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>XHR XML Example</title>
+	<style>
+		*{
+			font-family:tahoma,verdana,sans-serif;
+		}
+	</style>
+	<script>
+	
+	"use strict";
+	
+	(function(){
+		window.onload = init;
+		
+		function init(){
+			document.querySelector('#mybutton').onclick = loadData;
+		}
+		
+		function loadData(){
+			var xhr = new XMLHttpRequest();
+			var allEvents =[];
+			xhr.onload = function(){
+                var html = "";
+				var xml = xhr.responseXML;
+                //1 get an array of all the <event> elements
+                var allEvents =xml.querySelectorAll('event');
+                var lastBigImage = "";
+                
+                //2 loop through the <event> elements
+                for(var i = 0; i<allEvents.length; i++){
+                    
+                    //3 grab the current <event>
+                    var event = allEvents[i]
+                    
+
+                    var title=event.querySelector("title").innerHTML;
+                    
+                    var city=event.querySelector("city").innerHTML;
+                    
+                    var startDate=event.querySelector("startDate").innerHTML;
+                    
+                    var images = event.querySelectorAll("venue image");
+                    var biggestImage = images[images.length-1].innerHTML;
+                    
+                    if(biggestImage === ""){
+                        biggestImage = lastBigImage;
+                    } else {
+                        lastBigImage = biggestImage;
+                    }
+                    
+                    //7 do some concatenation
+                    html+="<div class='events'>";
+                    html+="<h3>"+title+"</h3>";
+                    html+="<p>"+city+ "--"+ startDate+"</p>";
+                    html+="<img src=\""+biggestImage+"\" />";
+                    html+="</div>";
+                    
+                    //8 update the #content div
+                    document.querySelector('#content').innerHTML=html;
+                    
+                }
+                
+				//debugger;
+
+				//document.querySelector('#content').innerHTML = "There are " + allJokes.length + " jokes!";
+			}
+			
+			var url = "last-fm-results.xml";
+			xhr.open('GET',url,true);
+			// try to prevent browser caching by sending a header to the server
+			xhr.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2010 00:00:00 GMT");
+			xhr.send();
+		}
+		
+		
+	
+	}())
+	</script>
+</head>
+<body>
+	<h1>Concerts!</h1>
+	<p><button id='mybutton'>Let's see some old concert dates</button></p>
+	<div id='content'></div>
+    <a href= "jokes.html"> Jokes XML</a> <br>
+	<a href= "movies.html"> Movies XML</a>
+	
+</body>
+</html>

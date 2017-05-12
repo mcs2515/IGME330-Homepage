@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Speed Circles 1</title>
+	<style type="text/css">
+	body{
+		background: #dddddd;
+		font-family:verdana,tahoma,sans-serif;
+		font-size:.8em;
+ 	}
+
+	#canvas,#controls{
+		background: #ffffff;
+		cursor: pointer;
+		margin-left: 10px;
+		margin-top: 10px;
+		box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+		
+		margin-left: 10px;
+		margin-top: 10px;
+		
+ 	}
+ 	
+ 	#controls{
+ 		padding:5px;
+ 		width:490px;
+ 	}
+ 	
+ 	#controls div{
+ 		margin-bottom:5px;
+ 	}
+ 	
+ 	#assignment{
+ 		margin-left: 10px;
+		margin-top: 10px;
+ 	}
+	
+	</style>
+	
+	<script>
+		
+		"use strict";
+		
+		// global variables
+		var canvas,ctx, mouse,dragging;
+		var FUDGE_DIVISOR = 1.5; // we always give our "magic numbers" names
+		
+		
+		/* init() is called when the page loads */
+		function init(){
+			canvas = document.querySelector("#canvas");
+			ctx = canvas.getContext("2d");
+			canvas.addEventListener("mousedown", doMousedown);
+			canvas.addEventListener("mousemove", doMousemove);
+			canvas.addEventListener("mouseup", doMouseup);
+			setupUI();
+		}
+		
+		/* Hook up UI widgets to canvas */
+		function setupUI(){
+			/* clear button */
+			document.querySelector("#clearButton").onclick = clearCanvas; 
+			
+			
+			// The below event handlers are pointing at anonymous functions
+			
+			/* save button */
+			document.querySelector("#saveButton").onclick = function(e){
+				// open a new window and load the image in it
+				// http://www.w3schools.com/jsref/met_win_open.asp
+				var data = canvas.toDataURL(); 
+				var windowName = "canvasImage";
+				var windowOptions = "left=0,top=0,width=" + canvas.width + ",height=" + canvas.height +",toolbar=0,resizable=0";
+				var myWindow = window.open(data,windowName,windowOptions);
+				myWindow.resizeTo(canvas.width,canvas.height); // needed so Chrome would display image
+			 };
+			 
+			 
+			 /* slider (just updates the text for now) */
+			 document.querySelector("#slider1").onchange = function(e){
+			 	//console.log("checked=" + e.target.value);
+			 	 document.querySelector("#sliderResults").innerHTML = e.target.value;
+				
+			 };
+			 
+			 
+			 /* checkbox (just updates the text for now) */
+			document.getElementById('myCheckbox').onchange = function(e){
+				//console.log("checked=" + e.target.checked);
+				var msg = "";
+				if( e.target.checked){
+				 	msg = "checked";
+				}
+				document.querySelector("#checkboxResults").innerHTML = msg;
+			};	
+			 
+			 
+		} // end function setupUI
+		
+		
+		
+		/* MOUSE EVENTS */
+		function doMousedown(e){
+			dragging = true;
+ 			mouse = getMouse(e);
+  			drawCircle(mouse.x,mouse.y,20,getRandomColor() );
+		}
+		
+		function doMousemove(e){
+			if(dragging){
+  				var oldMouseX = mouse.x;
+  				var oldMouseY = mouse.y;
+  			
+  				mouse = getMouse(e);
+  				var distance = distanceBetween(oldMouseX,oldMouseY,mouse.x,mouse.y)
+  				// console.log(distance);
+  				drawCircle(mouse.x, mouse.y, distance/FUDGE_DIVISOR, getRandomColor() );
+  			}
+		}
+		
+		function doMouseup(e){
+  			dragging = false;
+		}
+
+		
+		/* CANVAS DRAWING CODE */
+		function drawCircle(x,y,radius,fillColor){
+			// the last 2 arguments are optional
+			if (radius == undefined) radius = 10;
+			if (fillColor == undefined) fillColor = "red";
+			ctx.fillStyle = fillColor;
+			ctx.beginPath();
+			//  ctx.arc(x,y,radius,startAngle,endAngle, clockwise)
+			ctx.arc(x, y, radius, 0, Math.PI*2, false); 
+			ctx.closePath();
+ 			ctx.fill();
+ 			ctx.stroke();
+		
+		}
+		
+		function  clearCanvas(){
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+		}
+		
+		
+		
+		
+		/* HELPER FUNCTIONS */
+		
+		// adjusts coordinates of mouse over the window, to local mouse coordinates over the canvas
+		function getMouse(e){
+			var mouse = {}
+			mouse.x = e.pageX - e.target.offsetLeft;
+			mouse.y = e.pageY - e.target.offsetTop;
+			return mouse;
+		}
+		
+		// returns a random color of alpha 1.0
+		// http://paulirish.com/2009/random-hex-color-code-snippets/
+		function getRandomColor(){
+   			var red = Math.round(Math.random()*254+1);
+   			var green = Math.round(Math.random()*254+1);
+   			var blue=Math.round(Math.random()*254+1);
+   			var color='rgb('+red+','+green+','+blue+')';
+   			//	var color='rgba('+red+','+green+','+blue+',0.50)'; // 0.50 alpha
+   			return color;
+		}
+		
+		// used to calculate how fast the mouse is moving
+		function distanceBetween(x1,y1,x2,y2){
+			var dx = x2 - x1;
+			var dy = y2 - y1;
+			return Math.sqrt(dx*dx + dy*dy);
+		}
+		
+	
+		
+		window.addEventListener("load",init);
+	</script>
+</head>
+<body>
+<canvas id="canvas" height="500" width="500"></canvas>
+<div id="controls">
+	<div>
+    	<span><input id="clearButton" type="button" value="Clear Canvas"/></span>
+    	<span style="float:right"><input id='saveButton' type='button' value='Save Image'/></span>
+	</div>
+	
+	<div>
+		<label for="slider1">Unused Slider</label>
+		<input id="slider1" type ="range" min ="0.1" max="1.0" step ="0.1" value ="0.5"/>
+		<span style="float:right" id="sliderResults">???</span>
+	</div>
+	<div>
+		<span>
+			<label for="myCheckbox">Unused Checkbox</label>
+			<input type="checkbox" id="myCheckbox">
+		</span>
+		<span style="float:right" id="checkboxResults">???</span>
+	</div>
+	
+	<hr/>
+	<div>
+		<p>Click and drag in the canvas window. The faster you drag, the bigger the circles are. Best viewed in Chrome or Safari.</p>
+	</div>
+</div>
+
+<div id="assignment">
+	<p>This is a JS version of Khan Academy's <i>Speed Circles</i></p>
+	<p>Check out the Khan Academy examples (written in processing) here: <a href="http://www.khanacademy.org/cs/speed-circles/964929070">Speed Circles</a> & <a href="http://www.khanacademy.org/cs/mouse-interaction-symmetry/1009519497">Symmetry</a></p>
+	<p>Here's our in-class variation example: <i><a href="speed_circles_2.html">Speed Circles JS 2</a></i>.</p>
+</div>
+</body>
+</html>

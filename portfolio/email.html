@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/body.css">
+  <link rel="stylesheet" href="css/email.css">
+  <link rel="stylesheet" href="css/footer.css">
+
+</head>
+    
+    <script>
+        function init(){
+            //doing this so that the the header can load first before the form is made
+            //without this, the header does some weird transtions.
+            var div = document.querySelector('#contact');
+                
+             var bigString= "<fieldset> <input name='yourname' placeholder='Your name' type='text' tabindex='1' required focus> </fieldset> ";
+             bigString += "<fieldset> <input name='subject' placeholder='Subject' type='text' tabindex='2' required> </fieldset> ";
+             bigString += "<fieldset> <input name='email' placeholder='Your Email Address' type='text' tabindex='3' required> </fieldset> ";
+             bigString += "<fieldset> <textarea name='comments' placeholder='Type your message here....' tabindex='5' required></textarea> </fieldset> ";
+             bigString += "<fieldset> <button name='submit' type='submit' id='contact-submit' data-submit='...Sending'>Submit</button> </fieldset> ";
+            
+            div.innerHTML +=bigString; 
+
+        } 
+        window.onload = init;
+    </script>
+    
+<body>
+    <!--#include file="header.shtml"-->
+    <section class="content">   
+    <h2>Email me.</h2>
+    <h3 id="help">I am willing to help.</h3>
+    <p id="message">Send me a message if you are in need of my skills. I can provide more information about myself when we get in touch. </p>
+    <div class="container">  
+        <form  id="contact" action="contact.php" method="post">
+            <h3>Contact</h3>
+            <h4>Send me a message!</h4>
+
+        </form>
+    </div>
+    </section>
+
+    <!--#include file="footer.shtml"--> 
+</body>
+</html>

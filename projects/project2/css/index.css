@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Itim|Montserrat');
+
+body{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    min-width: 1000px;
+    background-image: url("../media/darth_stripe.png");
+    background-repeat: repeat;
+}
+
+canvas, .border, p{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 5em;
+    z-index: 0;
+    border-radius: 20px;
+    cursor: none;
+}
+
+.border{
+    z-index: -100;
+    width: 1020px;
+    height: 620px;
+    margin-top: 4.5em;
+    background: dimgray;
+    box-shadow: 10px 0px 50px #000000;
+}
+
+p{
+    top: 35em;
+    width: 45em;
+    height: auto;
+    font-size: 14pt;
+    text-align: left;
+    font-family: "Itim";
+    border-radius: 0px;
+    height: auto;
+    padding: 20pt 65pt;
+    color: dimgray;
+    background-color: rgba(0,0,0, .3);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.3) 90%, rgba(0, 0, 0, 0) 100%);
+}
+
+.bold{
+    font-weight: 900;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: darkgrey;
+    
+}
+
+img{
+    width: 1%;
+    height: auto;
+}
+
+#button1{
+    font-size: 24pt;
+    border-radius: 10pt;
+    z-index:1;
+    position: relative;
+    width: 10em;
+    padding: 5pt;
+    height: auto;
+    font-size: 18pt;
+    font-family: 'Montserrat', sans-serif;
+    top: 350pt;
+}
+
+#button1:hover{
+    background-color: #fff;
+}

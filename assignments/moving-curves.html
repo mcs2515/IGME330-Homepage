@@ -1,0 +1,111 @@
+<html>
+<head>
+	<!--
+		A canvas example from:
+		https://developer.apple.com/library/safari/documentation/AudioVideo/Conceptual/HTML-canvas-guide/DrawingLinesandShapes/DrawingLinesandShapes.html
+		Their coding style is different from what we'll be using in class - use our style, not theirs.
+	-->
+    <title>Simple curve example</title>
+    <style>
+		canvas{
+			background: #ffffff;
+			cursor: pointer;
+			margin-left: 10px;
+			margin-top: 10px;
+			box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+		}
+ 	</style>
+    <script type="text/javascript">
+        var canvas, ctx;
+        
+        var ctrlX = 5;
+        var ctrlY = 150;
+        var cp1 = {x:125,y:0};
+        var speed= {x: Math.random()*8, y: Math.random()*8};
+        
+        var ctrlXa = 50;
+        var ctrlYa = 300;
+        
+	function init() {
+		canvas = document.querySelector("canvas");
+		ctx = canvas.getContext("2d");
+		
+        
+        requestAnimationFrame(update);
+        
+        drawCurves();
+	}
+ 
+   function drawCurves() {
+   	ctx.lineWidth="3";
+       
+       
+    /*ctx.strokeStyle = "black";
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.quadraticCurveTo(ctrlX, ctrlY, canvas.width, canvas.height);
+    ctx.stroke();*/
+    
+    ctx.strokeStyle = "red";
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.bezierCurveTo(ctrlX, ctrlY, ctrlXa, ctrlYa, canvas.width, canvas.height);
+    ctx.stroke();
+}
+        
+    function update(time)
+    {
+        requestAnimationFrame(update);
+        
+        ctx.clearRect(0,0, 600, 400);
+        drawCurves();
+        
+        drawQuadCurve(ctx,0,0,cp1.x,cp1.y,canvas.width,canvas.height,"#F00",false,true);
+
+        cp1.x +=speed.x;
+        cp1.y +=speed.y;
+
+        if(cp1.x <= 0 || cp1.x>=canvas.width)
+            {
+                speed.x *=-1;
+                cp1.x +=speed.x;
+            }
+
+        if(cp1.y <= 0 || cp1.y>=canvas.height)
+            {
+                speed.y *=-1;
+                cp1.y +=speed.y;
+            }
+    }
+        
+        function drawQuadCurve(ctx,x1,y1,cpX,cpY,x2,y2,color,closePath,debug){
+			ctx.save();
+			ctx.strokeStyle = "black";
+			ctx.lineWidth = 5;
+			ctx.beginPath();
+			ctx.moveTo(x1,y1);
+			ctx.quadraticCurveTo(cpX, cpY, x2, y2);
+			if (closePath) ctx.closePath();
+			ctx.stroke();
+			
+			if (debug){
+				// draw the start point and end point as black squares
+				ctx.fillStyle = "black";
+				ctx.fillRect(x1,y1,7,7);
+				ctx.fillRect(x2,y2,7,7);
+			
+				// draw control point as a green square
+				ctx.fillStyle = "#0F0";
+				ctx.fillRect(cpX,cpY,7,7);
+			}
+			
+			ctx.restore();
+		}
+
+    </script>
+</head>
+<body onload="init()" style="background-color:#e0e0e0">
+    <canvas height="400" width="600">
+    </canvas>
+</body>
+</html>

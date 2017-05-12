@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>XHR XML Example</title>
+	<style>
+		*{
+			font-family:tahoma,verdana,sans-serif;
+		}
+	</style>
+	<script>
+	
+	"use strict";
+	
+	(function(){
+		window.onload = init;
+		
+		function init(){
+			document.querySelector('#mybutton').onclick = loadData;
+		}
+		
+		function loadData(){
+			var xhr = new XMLHttpRequest();
+			var allMovies =[];
+			xhr.onload = function(){
+                var html = "";
+				var xml = xhr.responseXML;
+                //1 get an array of all the <event> elements
+                var allMovies =xml.querySelectorAll('movie');
+                
+                
+                //2 loop through the <event> elements
+                for(var i = 0; i<allMovies.length; i++){
+                    
+                    //3 grab the current <event>
+                    var movie = allMovies[i]
+                    
+
+                    var title=movie.querySelector("title").innerHTML;
+                    var rating=movie.getAttribute('rating');
+                    var budget=movie.getAttribute('budget');
+                    var boxOffice=movie.getAttribute('boxOffice');
+                    var images = movie.querySelector("image").innerHTML;
+                    var actors = movie.querySelectorAll("actor");
+                    
+                    //7 do some concatenation
+                    html+="<div class='events'>";
+                    html+="<h3>"+title+"</h3>";
+                    html+="<p>Voice actors: ";
+                    
+
+                    for(var j = 0; j<actors.length; j++){
+                    
+                        if(j<actors.length-1){
+                            html+=actors[j].innerHTML+", ";
+                        }
+                        else{
+                            html+=actors[j].innerHTML;
+                        }
+                        
+                    }
+        
+                    html+="</p>";
+                    html+="<p>Rating: "+ rating+"</p>";
+                    html+="<p>Buget: $"+ budget+" million</p>";
+                    html+="<p>Box Office: $"+ boxOffice+" million</p>";
+                    html+="<img src=\""+images+"\" />";
+                    html+="</div><br/>";
+                    
+                    //8 update the #content div
+                    document.querySelector('#content').innerHTML=html;
+                    
+                }
+                
+				//debugger;
+			}
+			
+			var url = "movies.xml";
+			xhr.open('GET',url,true);
+			// try to prevent browser caching by sending a header to the server
+			xhr.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2010 00:00:00 GMT");
+			xhr.send();
+		}
+		
+		
+	
+	}())
+	</script>
+</head>
+<body>
+	<h1>Movies!</h1>
+	<p><button id='mybutton'>Let's see what weeaboo shi*t I'm into!</button></p>
+	<div id='content'></div>
+	    <a href= "jokes.html"> Jokes XML</a> <br>
+	<a href= "concerts.html"> Concerts XML</a>
+</body>
+</html>

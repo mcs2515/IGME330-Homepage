@@ -1,0 +1,64 @@
+body{
+
+	margin: 0 auto;
+	background-color: Gainsboro;
+	font-family: Arial, san-serif;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1900px;
+}
+
+canvas {
+  background: black; 
+  display : inline;
+  box-shadow: 5px 5px 50px #000;
+  z-index: -1;
+}
+
+img{
+     display: none;
+}
+
+#copyright{
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 1505px){
+    body{
+        position: relative;
+        margin: 0 auto;
+        display: block;
+        align-items: baseline;
+        justify-content: space-between;
+        
+    }
+    canvas{
+        display: block;
+        width: 700pt;
+        height: 450pt;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 20pt;
+    }
+}
+
+@media screen and (max-width: 480px){
+     body{
+        width: 100%;
+    }
+    
+    canvas{
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+

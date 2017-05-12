@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Canvas 1</title>
+	<style type="text/css">
+	body{
+		background: #dddddd;
+ 	}
+
+	canvas{
+		background: #ffffff;
+		cursor: pointer;
+		margin-left: 10px;
+		margin-top: 10px;
+		box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+ 	}
+	
+	</style>
+	
+	<script>
+		"use strict";
+		// #1 - wait for page to load
+		window.onload = init; 
+		
+		function init(){
+			console.log("init() called");
+			// #2 - get pointer to <canvas> element on page
+			var canvas = document.querySelector('canvas');
+			
+			// #3 - get pointer to "drawing context" and drawing API
+			var ctx = canvas.getContext('2d');
+			
+			/* #4 - start drawing! */
+            
+            //horizon line
+            ctx.strokeStyle = "green";
+            ctx.lineWidth= 5;
+            ctx.beginPath(); 
+			ctx.moveTo(0, 380);
+			ctx.lineTo(canvas.width, 380); 
+			ctx.closePath(); 
+			ctx.stroke();
+            
+            //ground
+            ctx.fillStyle = "#70C576";
+            ctx.fillRect(0,380, canvas.width, canvas.height);
+            
+            //sky
+            ctx.fillStyle = "#212449";
+            ctx.fillRect(0,0, canvas.width, 377);
+            
+            
+            ctx.fillStyle = "black";
+            ctx.strokeStyle= "white";
+            
+            //ears
+            ctx.beginPath(); 
+			ctx.moveTo(200, 100);
+			ctx.lineTo(230, 200); 
+            ctx.lineTo(330, 130);
+			ctx.closePath(); 
+            ctx.fill();
+			ctx.stroke();
+            
+            ctx.beginPath(); 
+			ctx.moveTo(550, 100);
+			ctx.lineTo(520, 200); 
+            ctx.lineTo(430, 130);
+			ctx.closePath(); 
+            ctx.fill();
+			ctx.stroke();
+            
+            //face shape
+			ctx.beginPath();
+			ctx.arc(canvas.width/2, canvas.height/2, 150, 0, Math.PI * 2, false); 
+			ctx.closePath();
+ 			ctx.fill();
+            ctx.stroke()
+			
+            //mouth
+            ctx.fillStyle = "white";
+            ctx.save();
+            ctx.scale(0.5,1);
+            ctx.beginPath();
+			//  ctx.arc(x,y,radius,startAngle,endAngle, clockwise)
+			ctx.arc(740, 330, 50, 0, Math.PI, false); 
+			ctx.closePath();
+ 			ctx.fill();
+            ctx.restore();
+            
+            //eyes            
+            ctx.save();
+           
+            ctx.fillStyle= "red";
+            ctx.scale(0.5,1);
+            ctx.beginPath();
+			//  ctx.arc(x,y,radius,startAngle,endAngle, clockwise)
+			ctx.arc(630, 240, 30, 0, Math.PI*2, false); 
+			ctx.closePath();
+ 			ctx.fill();
+            
+             ctx.beginPath();
+			//  ctx.arc(x,y,radius,startAngle,endAngle, clockwise)
+			ctx.arc(860, 240, 30, 0, Math.PI*2, false); 
+			ctx.closePath();
+ 			ctx.fill();
+            
+            ctx.restore();
+            
+            ctx.save();
+            ctx.lineWidth=20;
+            ctx.strokeStyle= "black"
+            
+            ctx.beginPath(); 
+			ctx.moveTo(300, 200);
+			ctx.lineTo(340, 220); 
+			ctx.closePath(); 
+			ctx.stroke();
+            
+            ctx.beginPath(); 
+			ctx.moveTo(440, 200);
+			ctx.lineTo(400, 220); 
+			ctx.closePath(); 
+			ctx.stroke();
+            ctx.restore();
+            
+            ctx.beginPath(); 
+			ctx.moveTo(250, 280);
+			ctx.lineTo(310, 300); 
+			ctx.closePath(); 
+			ctx.stroke();
+            
+            ctx.beginPath(); 
+			ctx.moveTo(260, 320);
+			ctx.lineTo(310, 300); 
+			ctx.closePath(); 
+			ctx.stroke();
+            
+            ctx.beginPath(); 
+			ctx.moveTo(490, 280);
+			ctx.lineTo(430, 300); 
+			ctx.closePath(); 
+			ctx.stroke();
+            
+            ctx.beginPath(); 
+			ctx.moveTo(430, 300);
+			ctx.lineTo(490, 320); 
+			ctx.closePath(); 
+			ctx.stroke();
+            
+            //tree
+            ctx.strokeStyle = "#8C6C58";
+            ctx.lineWidth=20;
+            ctx.beginPath(); 
+			ctx.moveTo(100, 150);
+			ctx.lineTo(100, 400); 
+			ctx.closePath(); 
+            ctx.stroke();
+
+            
+            ctx.fillStyle = "#588C62";
+            ctx.beginPath(); 
+			ctx.moveTo(100, 100);
+			ctx.lineTo(30, 330); 
+            ctx.lineTo(180, 330);
+			ctx.closePath(); 
+            ctx.fill();
+            
+            //moon
+            ctx.fillStyle = "yellow";
+			ctx.beginPath();
+			//  ctx.arc(x,y,radius,startAngle,endAngle, clockwise)
+			ctx.arc(620, 70, 50, 0, Math.PI * 2, false); 
+			ctx.closePath();
+ 			ctx.fill();
+            
+            ctx.fillStyle = "#212449";
+			ctx.beginPath();
+			//  ctx.arc(x,y,radius,startAngle,endAngle, clockwise)
+			ctx.arc(610, 80, 50, 0, Math.PI * 2, false); 
+			ctx.closePath();
+ 			ctx.fill();
+            
+			// draw filled square
+			//ctx.fillStyle = "red"; 
+			// ctx.fillRect(x,y,width,height);
+			//ctx.fillRect(20,20,100,100);
+			
+			
+			/** 
+			// draw stroked square
+			ctx.strokeStyle="#00FF00"; // any legal CSS color will work for .fillStyle or .strokeStyle
+			ctx.lineWidth=5;
+			// ctx.strokeRect(x,y,width,height);
+			ctx.strokeRect(220,20,100,100);
+			**/
+			
+			
+			/**
+			// fill and stroke circle
+			ctx.fillStyle = "yellow";
+			ctx.beginPath();
+			//  ctx.arc(x,y,radius,startAngle,endAngle, clockwise)
+			ctx.arc(470, 70, 50, 0, Math.PI * 2, false); 
+			ctx.closePath();
+ 			ctx.fill();
+ 			ctx.stroke();
+ 			**/
+ 			
+			/**
+			// stroke line
+			ctx.lineWidth = 20; 
+			ctx.strokeStyle = "rgb(55, 11, 200)"; // any legal CSS color will work for .fillStyle or .strokeStyle
+			ctx.beginPath(); 
+			ctx.moveTo(20, 180);
+			ctx.lineTo(520, 180); 
+			ctx.closePath(); 
+			ctx.stroke();
+			**/
+			
+			/**
+			// fill text
+			ctx.font = "48px Verdana italic"; // the value of .font must be a valid CSS declaration
+			ctx.fillText("Rich Media Web App Dev I",20,300);
+			**/
+			
+			
+			/**
+			// stroke text
+			ctx.strokeStyle = "purple";
+			ctx.lineWidth = 1; 
+			ctx.strokeText("Rich Media Web App Dev I",20,300);
+			**/
+			
+			
+			/**
+			// Bonus: A Parallelogram
+			ctx.beginPath();
+            ctx.moveTo(50, 50); // "pick up" pen and move to top-left corner
+            ctx.lineTo(250, 50); // extend path to top-right corner
+            ctx.lineTo(200, 150); // extend path to bottom-right corner
+            ctx.lineTo(0, 150); // extend path to bottom-left corner
+            
+            // closing the path will automatically extend the path back to (50,50) where it started
+            ctx.closePath();
+            
+            // we can't yet see the path, so stroke and fill it.
+            ctx.fillStyle = "yellow"; 
+            ctx.fill();
+            ctx.strokeStyle="#red";
+            ctx.lineWidth=10; 
+			ctx.stroke();
+			**/
+			
+			
+		}
+		
+		console.log("In bottom of <script> tag!");
+	</script>
+	
+</head>
+<body>
+	<canvas width="750" height="500">
+         Get a browser that supports Canvas!
+         <!-- The user will only see the above text if their browser is older and doesn't support <canvas> -->
+	
+      </canvas>
+</body>
+</html>

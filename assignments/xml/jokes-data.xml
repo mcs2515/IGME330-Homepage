@@ -1,0 +1,30 @@
+<jokes>
+	<joke rating="5">
+		<question>What do you call a very small valentine?</question>
+		<answer>A valen-tiny!</answer>
+	</joke>
+	<joke rating="3">
+		<question>What did the dog say when he rubbed his tail on the sandpaper?</question>
+		<answer>Ruff, Ruff!</answer>
+	</joke>
+	<joke rating="4">
+		<question>Why don't sharks like to eat clowns?</question>
+		<answer>Because they taste funny!</answer>
+	</joke>
+	<joke rating="3">
+		<question>What did the boy cat say to the girl cat?</question>
+		<answer>You're Purr-fect!</answer>
+	</joke>
+	<joke rating="4">
+		<question>What kinds of music do teenagers like?</question>
+		<answer>LOUD and Very LOUD!</answer>
+	</joke>
+	<joke rating="3">
+		<question>What do you call a fish with no eyes?</question>
+		<answer>An FSH!</answer>
+	</joke>
+	<joke rating="2">
+		<question>What is a frog's favorite outdoor sport?</question>
+		<answer>Fly Fishing!</answer>
+	</joke>
+</jokes>

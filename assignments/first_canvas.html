@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>First Canvas
+    </title><meta charset="utf-8">
+    <script>
+        //wait for page to load to call the function
+        window.onload = init;
+        
+        var ctx;
+        
+        function init()
+        {
+            var canvas= document.querySelector("#canvas");
+            ctx= canvas.getContext("2d");
+            
+            //ctx.fillStyle = "green";
+            ctx.fillStyle = getRandomColor();
+            ctx.fillRect(20,20,600,440)
+            //prints out whats ctx
+            //console.dir(ctx);
+            
+            //ctx.fillStyle="red";
+            
+            //setInterval(drawRandomRect, 1);
+            requestAnimationFrame(drawRandomRect);
+            setInterval(clas, 1000);
+        }
+        
+        function getByte()
+        {
+            return 55+Math.round(Math.random()*200)
+        }
+        
+        function getRandomColor()
+        {
+            return "rgba("+getByte()+ "," + getByte()+ "," + getByte() + ", .4)"; 
+        }
+        
+        function clas()
+        {
+            ctx.clearRect(0,0,640,480)   
+        }
+        
+        function drawRandomRect()
+        {
+            ctx.fillStyle= getRandomColor();
+            var x= Math.random()*640;
+            var y= Math.random()* 480;
+            var width= 10+Math.random()*90;
+            var height= 10+ Math.random()*90;
+            ctx.fillRect(x,y, width, height);
+            requestAnimationFrame(drawRandomRect);
+        }
+        
+    </script>
+</head>
+    
+    
+<body>
+    <canvas id="canvas" width="640" height="480">
+        Get a real broswer. DO you live under a rock?
+    </canvas>
+</body>
+    
+</html>

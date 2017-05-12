@@ -1,0 +1,12 @@
+{
+  "name": "simple_http",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "test": "echo \"Tests complete\""
+  },
+  "author": "Mean Smith",
+  "license": "ISC"
+}

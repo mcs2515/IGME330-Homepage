@@ -1,0 +1,14 @@
+<footer>
+    <div class="gradient"></div>
+    <p id= "copyright">&copy; Copyright 2016 Megan C. Smith </p>
+    <p id="ssi">
+    <!--#config timefmt="Last updated: %B %e, %Y" -->
+    <!--#echo var="LAST_MODIFIED"-->
+    </p>
+        <nav class= "connections">
+            <a target="_blank" href= https://www.linkedin.com/in/meganchunyusmith> <img id="linkedin"  src="media/linkedIn_Logo.png" alt="Linkedin Logo" width="35" height="auto"> </a>
+            <a target="_blank" href= https://zhera601.deviantart.com> <img id="deviantart" src="media/deviantArt_Logo.png" alt="DeviantArt Logo" width="35" height=auto> </a>
+            <a target="_blank" href= https://www.github.com/mcs2515><img id="github"  src="media/github_Logo.png" alt="Github Logo" width="35" height=auto></a>
+        
+        </nav>
+</footer>

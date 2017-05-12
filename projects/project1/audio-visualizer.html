@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Web Audio Visualizer</title>
+    <link REL="StyleSheet" TYPE="text/css" HREF="css/main.css">
+    <link REL="StyleSheet" TYPE="text/css" HREF="css/controls.css">
+    <link rel="stylesheet" href="css/audioplayer.css" />
+    <script src="js/canvasStuff.js"></script>
+
+</head>
+    
+<body>
+    <canvas id="canvas" width="1200" height="775"></canvas>
+
+	<section id="controls">
+        
+         <section id= "title"> 
+            <h1 id= "magical">Magical</h1>
+            <h1 id= "visual">Visualizer</h1>
+         </section>
+        
+<!--        Audio Player Author: Osvaldas Valutis-->
+<!--        http://tympanus.net/codrops/2012/12/04/responsive-touch-friendly-audio-player/-->
+        <audio src="media/Castle In The Sky.mp3" autostart="true"></audio>
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/audioplayer.js"></script>
+        <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+        <br>
+            <section class= "songs">
+                <h4>Songs: </h4>
+                <section class= "options" id="songList">
+                    <ul class= "playing" >
+                        <li id= "New_Adventure_Theme" >New Adventure Theme</li> 
+
+        <!--             Castle in the Sky by DJ Satomi
+                        Link: https://www.youtube.com/watch?v=GxbfPSVtBs4
+        -->
+                        <li id= "Castle_In_The_Sky" class= "selected">Castle in the Sky</li>
+
+        <!--            Dance Through the Danger by Cristina Vee
+                        Link: https://www.youtube.com/watch?v=71lLnE8gJnU
+        -->
+
+                        <li id= "Through_The_Danger">Through the Danger</li>
+        <!--                <li class= "hideMode" id= "Moon Pride">Moon Pride</li>-->
+                    </ul>
+                </section>
+            </section>
+
+            <section class="modes">
+                <h4>Mode: </h4>
+                <section class= "options" id="mode">
+                    <ul>
+                        <li id= "frequency" class= "selected">Frequency</li>
+                        <li id= "wave">Wave</li>
+                    </ul>
+                </section>  
+            </section>
+
+<!--		<button id="fsButton">Go Full Screen</button><br>-->
+        <section class="effects">
+            <h4>Effects: </h4>
+  
+                <br/>
+    <!--        <p id="status">Now playing: media/New Adventure Theme.mp3</p>-->
+                <label class= "sliders" for="slider1">Circle Radius: </label>
+                <input class= "sliders" id="slider1" type ="range" min ="190" max="300" step ="10" value ="200"/>
+                <span class= "sliders" style="float:right" class="sliderResults"></span><br/><br/>
+
+                <label class= "sliders" for="slider2">Grey Scale: </label>
+                <input class= "sliders" id="slider2" type ="range" min ="0.0" max="1.0" step =".05" value ="0.0"/>
+                <span class= "sliders" style="float:right" class="sliderResults"></span><br/><br/>
+
+                <label class= "sliders" for="slider3">Delay/Reverb: </label>
+                <input class= "sliders" id="slider3" type ="range" min ="0.0" max="1.0" step =".1" value ="0.0"/>
+                <span class= "sliders" style="float:right" class="sliderResults"></span><br/><br/>
+            </section>
+                
+            <section id="box" >
+                <input type="checkbox" id="invertCheckbox">
+                <label class = "boxLabel" for="invertCheckbox">Invert</label> 
+
+                <input type="checkbox" id="noiseCheckbox">
+                <label class = "boxLabel" for="noiseCheckbox">Noise</label>
+
+                <input type="checkbox" id="linesCheckbox">
+                <label class = "boxLabel" for="linesCheckbox">Lines</label>
+
+                <input type="checkbox" id="greenCheckbox">
+                <label for="greenCheckbox">Green Tint</label>
+            </section>
+
+            
+        
+        <section class= "magicButton" >
+            <ul>
+                <li class= "magicTheme">Magic Girl Mode</li>
+            </ul>
+
+            <img src="media/background.jpg" id="background" width="1116" height="1116">
+        </section>
+        
+        <footer><h5 id= "copyright"> &copy; Copyright 2016 Megan Smith </h5></footer>
+	</section>
+
+</body>
+    
+
+</html>

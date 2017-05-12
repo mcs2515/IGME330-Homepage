@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+ 	<title>Event Finder</title>
+	<!-- Import jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  
+ 
+  <script>
+  "use strict";
+
+	var EVENTFUL_URL = "https://api.eventful.com/json/events/search?callback=jsonLoaded&app_key="
+	var API_KEY = "hxZWt39mBDPnNG9B";
+	var LOCATION = "rochester"; // this is hard-coded for testing purposes
+
+	window.onload = init;
+	
+	function init(){
+		document.querySelector("#search").onclick = getData;
+	}
+	
+	// MY FUNCTIONS
+	function getData(){
+		// build up our URL string
+		var url = EVENTFUL_URL 
+		url += API_KEY;
+		url += "&location=";
+		url += LOCATION;
+	
+		document.querySelector("#content").innerHTML = "<b>Searching for " + LOCATION + "</b>";
+		
+		// call the web service, and download the file
+		console.log("loading " + url);
+		$("#content").fadeOut(250);
+		$.ajax({
+		  dataType: "jsonp",
+		  url: url,
+		  data: null,
+		  success: jsonLoaded
+		});
+	}
+	
+	
+	function jsonLoaded(obj){
+		console.log("obj = " +obj);
+		console.log("obj stringified = " + JSON.stringify(obj));
+		
+		// if there's an error, print a message and return
+		if(obj.error){
+			var status = obj.status;
+			var description = obj.description;
+			document.querySelector("#content").innerHTML = "<h3><b>Error!</b></h3>" + "<p><i>" + status + "</i><p>" + "<p><i>" + description + "</i><p>";
+			$("#content").fadeIn(500);
+			return; // Bail out
+		}
+		
+		// if there are no results, print a message and return
+		if(obj.total_items == 0){
+			var status = "No results found";
+			document.querySelector("#content").innerHTML = "<p><i>" + status + "</i><p>" + "<p><i>";
+			$("#content").fadeIn(500);
+			return; // Bail out
+		}
+		
+		// TODO
+		// if there is only one result, Eventful returns an object instead of an array
+		// create an array with the single object
+		
+		// If there is an array of results, loop through them
+		var allEvents = obj.events.event;
+		console.log("allEvents.length = " + allEvents.length);
+		var bigString = "<p><i>There are " + allEvents.length + " events for " + LOCATION + "</i></p>";
+		
+		for (var i=0;i<allEvents.length;i++){
+			var event = allEvents[i];
+			
+			var title = event.title;
+			if (!title) title = "No description found";
+			
+			var description = event.description;
+			if (!description) description = "No description found";
+			var line = "<div class='event'>";
+			line += "<b>" + title + "</b><br>";
+			line += "<small><i>" + description + "</i></small> ";
+			line += "</div>";
+			bigString += line;
+		}
+		
+		document.querySelector("#content").innerHTML = bigString;
+		$("#content").fadeIn(500);
+	}	
+  
+  
+  
+  </script>
+  <style>
+  	*{
+  		font-family:verdana,tahoma,sans-serif;
+  	}
+	img{
+		display:block;
+	}
+	.event{
+		float:left;
+		padding:10px;
+		border:1px solid gray;
+		width:150px;
+		height:150px;
+		overflow:scroll;
+		margin-left:10px;
+		margin-bottom:10px;
+	}
+  </style>
+  
+</head>
+<body>
+ <h1>Event Finder</h1>
+
+
+<button type="button" id="search">Get Rochester Events!<br />:-)</button>
+
+<h2>Results</h2>
+ <div id="content">
+ <p>No data yet!</p>
+ </div>
+ 
+
+</body>
+</html>

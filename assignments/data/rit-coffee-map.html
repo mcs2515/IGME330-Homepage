@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+        
+        button{
+            position: absolute;
+            color: red;
+            font-weight: bold;
+            height: 30px;
+            width: 190px;
+            z-index: 100;
+        }
+        
+        #worldZoomButton{
+            top:70px;
+            left:10px;
+        }
+        
+        #defaultZoomButton{
+            top:110px;
+            left:10px;
+        }
+        
+        #buildingZoomButton{
+            top:150px;
+            left:10px;
+        }
+        
+        #isometricViewButton{
+            top:190px;
+            left:10px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var infowindow;
+      var map;
+      function initMap() {
+        //object literal
+        var mapOptions = {
+          center: {lat: 43.083848, lng: -77.6799},
+          zoom: 16,
+          myTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        
+        map= new google.maps.Map(document.getElementById('map'), mapOptions);
+        map.mapTypeId = 'satellite';
+        map.setTilt(45);
+          
+        document.querySelector("#worldZoomButton").onclick=function(){
+            map.setZoom(1);
+        }
+        
+        document.querySelector("#defaultZoomButton").onclick=function(){
+            map.setZoom(16);
+        }
+        
+        document.querySelector("#buildingZoomButton").onclick=function(){
+            map.setZoom(20);
+        }
+        
+        document.querySelector("#isometricViewButton").onclick=function(){
+            map.setZoom(18);
+        }
+        
+//        var position = {lat: 43.082634, lng: -77.68004};
+//          var marker = new google.maps.Marker({position: position, map:map});
+//          marker.setTitle("Crosroads");
+        for(var i=0; i< coffeeShops.length; i++){
+            addMarker(coffeeShops[i].latitude, coffeeShops[i].longitude, coffeeShops[i].title);
+        }
+        
+          for(var i=0; i< buildings.length; i++){
+              drawPolygon(buildings[i].path, buildings[i].title);       
+              
+          }
+        
+        }
+        
+        
+        function addMarker(latitude, longitude, title){
+            var position = {lat: latitude, lng: longitude};
+            var marker = new google.maps.Marker({position: position, map:map});
+            marker.setTitle(title);
+            
+            //add a listener fo rthe click event
+            google.maps.event.addListener(marker, 'click', function(e){
+                makeInfoWindow(this.position, this.title);
+            });
+      }
+        
+        function makeInfoWindow(position, msg){
+            //close old infowindow if it exists
+            if(infowindow)infowindow.close();
+            
+            //make a new infowindow
+            infowindow=new google.maps.InfoWindow({
+                map: map,
+                position: position,
+                content: "<b>" + msg + "</br>"
+            });
+        }
+            
+        function drawPolygon(paths,title){
+            var outline = new google.maps.Polygon({
+                path: paths,
+                strokeColor: 'green',
+                strokeOpacity: 0.8,
+                strokeWeight: 3,
+                fillColor: 'blue',
+                fillOpacity: 0.35
+              });
+
+            outline.setMap(map);
+        }
+    
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcOO9FkDVNRjvVH2q8x71sw0FrvxyrHiY&callback=initMap"
+    async defer></script>
+      
+    <p><button id="worldZoomButton"> World Zoom (1)</button></p>  
+    <p><button id="defaultZoomButton"> Default Zoom (16)</button></p>  
+    <p><button id="buildingZoomButton"> Building Zoom (20)</button></p> 
+    <p><button id="isometricViewButton"> Isometric View Zoom (18)</button></p> 
+      
+      <script src="coffee-data.js"></script>
+      <script src="building-data.js"></script>
+      
+  </body>
+</html>

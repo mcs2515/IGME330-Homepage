@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Template</title>
+	<style type="text/css">
+    @import 'https://fonts.googleapis.com/css?family=Righteous|Cedarville+Cursive';
+	canvas{
+		border:1px solid gray;
+	}
+	</style>
+    
+    
+    
+	<script>
+		// #0 - In this course we will always use ECMAScript 5's "strict" mode
+		// See what 'use strict' does here:
+		// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode
+		'use strict';
+		
+		// #1 call the init function after the pages loads
+		// this is called an "event handler"
+		window.onload = init;
+	
+		function init(){
+            
+			// #2 Now that the page has loaded, start drawing!
+			console.log('init called');
+			
+			// A - canvas variable points at <canvas> tag
+		    var canvas= document.querySelector('canvas');
+			
+			// B - the ctx variable points at a "2D drawing context"
+			var ctx= canvas.getContext('2d');
+            
+            //horizontalalignment
+            ctx.textAlign = "center" ;
+            //verticalalignment
+            ctx.textBaseline = "middle";
+            
+            ctx.save();
+            //setshadowproperties
+            ctx.shadowColor="purple";
+            ctx.shadowOffsetX=0;
+            ctx.shadowOffsetY=0;
+            ctx.shadowBlur=30;
+            
+			// C - all fill operations are now in yellow
+			//ctx.fillStyle='yellow';
+			ctx.fillStyle= "#C0B5F2";
+            
+			// D - fill a rectangle with the current fill color
+			ctx.fillRect(0,0,640,480);
+			
+			// E - set the current font
+			ctx.font='bold 60pt Verdana';
+			
+			// F - change the current fill color
+            //ctx.fillStyle='#44aa44';
+			ctx.fillStyle='white';
+			
+			// G - draw and fill text using current fill color
+			//ctx.fillText('Ace Coder', 50,240);
+            ctx.fillText('Ace Coder', 350,240);
+			
+            //GettingFontMetrics
+            var metrics=ctx.measureText("Yo!");
+            console.log("Yo!is"+metrics.width+"pixelswide");
+            
+            ctx.restore();
+            
+            //line width and color
+            //ctx.strokeStyle="green";
+            ctx.strokeStyle= "white"
+            ctx.lineWidth=7;
+            
+			//start defining horizontal line
+            ctx.beginPath();
+            
+            ctx.moveTo(0,100);
+            ctx.lineTo(640,100);
+            
+            //closethepath
+            ctx.closePath();
+            
+            //stroke the path
+            ctx.stroke();
+            
+            //line width and color
+            ctx.strokeStyle="blue";
+            ctx.lineWidth=18;
+            
+			//start defining verticle line
+            ctx.beginPath();
+            
+            ctx.moveTo(60,0);
+            ctx.lineTo(60,640);
+            
+            //closethepath
+            ctx.closePath();
+            
+            //stroke the path
+            ctx.stroke();
+            
+            //line width and color
+            ctx.strokeStyle="white";
+            ctx.lineWidth=7;
+            
+			//start defining triangle
+            ctx.beginPath();
+            
+            ctx.moveTo(530,340);
+            ctx.lineTo(600,430);
+            ctx.lineTo(460,430);
+            
+            //closethepath
+            ctx.closePath();
+            
+            //stroke the path
+            ctx.stroke();
+            
+            //start defining triangle
+            ctx.beginPath();
+            
+            ctx.moveTo(530,370);
+            ctx.lineTo(560,410);
+            ctx.lineTo(500,410);
+            
+            //closethepath
+            ctx.closePath();
+            
+            //stroke the path
+            ctx.stroke();
+            
+			//Make your version different:
+            
+			//i) Change the yellow rectangle to a different solid color.
+            ctx.fillStyle= "#C0B5F2";
+            //ctx.fillRect(0,0,640,480);
+            
+			//ii) Change the text to your name, and change the color of the text to 
+			//something else        
+            ctx.font="bold 35pt Cedarville Cursive";
+            ctx.fillStyle= "#3D59C6";
+            ctx.fillText('Megan Smith',330, 320);
+            ctx.font="50pt Righteous";
+            ctx.fillStyle= "black";
+            ctx.fillText('IGM330',325, 50);
+
+			//iii) Change the font of your name to something else. If you know how to embed
+			 //web fonts, find something here and use it: http://www.google.com/fonts
+
+			//iv) Add another line of text that reads “IGM”. Make sure that this text
+			 //appears in a different color and font than your name did.
+
+			//v) Add two squares to your canvas (50 x 50  or so) using 
+			//ctx.fillRect(x,y,width,height)- and make sure that the square color is the 
+			//same as the first text you drew (your name).
+            ctx.fillStyle= "#3D59C6";
+            ctx.fillRect(160,35,30,30);
+            ctx.fillRect(455,35,30,30);
+
+
+		}
+	</script>
+</head>
+<body>
+	<canvas width="640" height="480">
+		Get a real browser!
+		<!-- The user will only see the above text if their browser is older and doesn't support <canvas> -->
+	</canvas>
+    
+    <p style="font-family: 'Cedarville Cursive'; Visibility: hidden; ">tofu</p>
+    <p style="font-family: 'Righteous'; Visibility: hidden; ">rice</p>
+</body>
+</html>
